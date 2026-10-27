@@ -1,0 +1,6 @@
+{
+  "name": "AICTE Complaint Intelligence Hub",
+  "description": "Integrated institutional complaint monitoring, bureau coordination, smart escalation, and explainable AI intelligence platform across configured bureaus and cells.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,2237 @@
+{
+  "organization": {
+    "code": "AICTE-HQ",
+    "name": "AICTE Central Complaint Intelligence Hub",
+    "tagline": "One Platform. Every Grievance. Complete Regulatory Accountability.",
+    "isDemo": false,
+    "timezone": "Asia/Kolkata",
+    "dataRetentionDays": 1825
+  },
+  "users": [
+    {
+      "id": "USR-CMO",
+      "email": "cmo@aicte-india.org",
+      "fullName": "Dr. Rajeshwar Prasad",
+      "role": "CENTRAL_MONITORING_OFFICER",
+      "bureauId": null,
+      "institutionId": null,
+      "designation": "Central Monitoring Director",
+      "active": true,
+      "isDemoUser": false
+    },
+    {
+      "id": "USR-ADMIN",
+      "email": "admin@aicte-india.org",
+      "fullName": "Dr. S. Subramanian",
+      "role": "SUPER_ADMIN",
+      "bureauId": null,
+      "institutionId": null,
+      "designation": "Chief Platform Administrator",
+      "active": true,
+      "isDemoUser": false
+    },
+    {
+      "id": "USR-BUR-GRIEVANCE",
+      "email": "pgrc.head@aicte-india.org",
+      "fullName": "Prof. Meera Nair",
+      "role": "BUREAU_OFFICER",
+      "bureauId": "BUR-GRIEVANCE",
+      "institutionId": null,
+      "designation": "Senior Grievance Redressal Officer",
+      "active": true,
+      "isDemoUser": false
+    },
+    {
+      "id": "USR-BUR-ACADEMIC",
+      "email": "academic.quality@aicte-india.org",
+      "fullName": "Dr. Arvind Deshmukh",
+      "role": "BUREAU_OFFICER",
+      "bureauId": "BUR-ACADEMIC",
+      "institutionId": null,
+      "designation": "Academic Quality Nodal Officer",
+      "active": true,
+      "isDemoUser": false
+    },
+    {
+      "id": "USR-BUR-APPROVAL",
+      "email": "approval.nodal@aicte-india.org",
+      "fullName": "Dr. R. K. Verma",
+      "role": "BUREAU_OFFICER",
+      "bureauId": "BUR-APPROVAL",
+      "institutionId": null,
+      "designation": "Approval Bureau Nodal Officer",
+      "active": true,
+      "isDemoUser": false
+    },
+    {
+      "id": "USR-INST-01",
+      "email": "liaison@coep.ac.in",
+      "fullName": "Dr. Ananya Sharma",
+      "role": "INSTITUTION_LIAISON",
+      "bureauId": null,
+      "institutionId": "INST-001",
+      "designation": "Nodal Compliance Officer — COEP Technological University",
+      "active": true,
+      "isDemoUser": false
+    },
+    {
+      "id": "USR-AUDITOR",
+      "email": "oversight.auditor@aicte-india.org",
+      "fullName": "Shri K. Venkataraman",
+      "role": "AUDITOR",
+      "bureauId": null,
+      "institutionId": null,
+      "designation": "Principal Oversight Auditor",
+      "active": true,
+      "isDemoUser": false
+    }
+  ],
+  "bureaus": [
+    {
+      "id": "BUR-APPROVAL",
+      "code": "AB",
+      "name": "Approval & Affiliation Bureau",
+      "description": "Monitors institutional Extension of Approval (EoA), sanctioned intake limits, and affiliation compliance.",
+      "headOfficerName": "Dr. R. K. Verma",
+      "slaResponseHours": 24,
+      "slaResolutionDays": 14,
+      "capacityLimit": 15,
+      "active": true,
+      "isDemoConfig": false
+    },
+    {
+      "id": "BUR-GRIEVANCE",
+      "code": "PGRC",
+      "name": "Public Grievance Redressal Cell",
+      "description": "Addresses student fee refunds, original document retention, campus harassment, and ombudsman referrals.",
+      "headOfficerName": "Prof. Meera Nair",
+      "slaResponseHours": 12,
+      "slaResolutionDays": 10,
+      "capacityLimit": 20,
+      "active": true,
+      "isDemoConfig": false
+    },
+    {
+      "id": "BUR-ACADEMIC",
+      "code": "AQB",
+      "name": "Academic Quality & Faculty Norms Bureau",
+      "description": "Investigates faculty-to-student cadre ratios, 7th CPC pay-scale disbursement, and curriculum delivery compliance.",
+      "headOfficerName": "Dr. Arvind Deshmukh",
+      "slaResponseHours": 24,
+      "slaResolutionDays": 15,
+      "capacityLimit": 15,
+      "active": true,
+      "isDemoConfig": false
+    },
+    {
+      "id": "BUR-INFRA",
+      "code": "IFC",
+      "name": "Infrastructure & Lab Vigilance Cell",
+      "description": "Audits laboratory equipment deficits, fire safety NOC certificates, and barrier-free campus accessibility.",
+      "headOfficerName": "Smt. Kavita Rao",
+      "slaResponseHours": 24,
+      "slaResolutionDays": 18,
+      "capacityLimit": 12,
+      "active": true,
+      "isDemoConfig": false
+    },
+    {
+      "id": "BUR-FINANCE",
+      "code": "FGB",
+      "name": "Finance & Scholarship Governance Bureau",
+      "description": "Reviews Pragati/Saksham scholarship biometric uploads, unauthorized fee levies, and capitation fee complaints.",
+      "headOfficerName": "Shri S. Natarajan",
+      "slaResponseHours": 16,
+      "slaResolutionDays": 12,
+      "capacityLimit": 15,
+      "active": true,
+      "isDemoConfig": false
+    }
+  ],
+  "institutions": [
+    {
+      "id": "INST-001",
+      "institutionCode": "1-10972311",
+      "name": "COEP Technological University",
+      "institutionType": "Engineering & Technology",
+      "state": "Maharashtra",
+      "district": "Pune",
+      "address": "Wellesley Road, Shivajinagar, Pune, Maharashtra 411005",
+      "approvalStatus": "Approved - Autonomous",
+      "contactEmail": "liaison@coep.ac.in",
+      "contactPhone": "+91-20-2550-7000",
+      "sourceProvenance": "AICTE National Institutional Portal (PID: 1-10972311)",
+      "isDemoRecord": false,
+      "createdAt": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "INST-002",
+      "institutionCode": "1-10984521",
+      "name": "JNTU College of Engineering, Hyderabad",
+      "institutionType": "Engineering & Technology",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "address": "Kukatpally, Housing Board Colony, Hyderabad, Telangana 500085",
+      "approvalStatus": "Approved",
+      "contactEmail": "registrar@jntuh.ac.in",
+      "contactPhone": "+91-40-2315-8661",
+      "sourceProvenance": "AICTE National Institutional Portal (PID: 1-10984521)",
+      "isDemoRecord": false,
+      "createdAt": "2026-01-12T09:00:00.000Z"
+    },
+    {
+      "id": "INST-003",
+      "institutionCode": "1-10993145",
+      "name": "Harcourt Butler Technical University (HBTU)",
+      "institutionType": "Engineering & Technology",
+      "state": "Uttar Pradesh",
+      "district": "Kanpur Nagar",
+      "address": "Nawabganj, Kanpur, Uttar Pradesh 208002",
+      "approvalStatus": "Approved - Under Scrutiny",
+      "contactEmail": "compliance@hbtu.ac.in",
+      "contactPhone": "+91-512-253-4001",
+      "sourceProvenance": "AICTE National Institutional Portal (PID: 1-10993145)",
+      "isDemoRecord": false,
+      "createdAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+      "id": "INST-004",
+      "institutionCode": "1-11024512",
+      "name": "R.V. College of Engineering (RVCE)",
+      "institutionType": "Engineering & Technology",
+      "state": "Karnataka",
+      "district": "Bengaluru Urban",
+      "address": "Mysuru Road, RV Vidyaniketan Post, Bengaluru, Karnataka 560059",
+      "approvalStatus": "Approved - Autonomous",
+      "contactEmail": "nodal@rvce.edu.in",
+      "contactPhone": "+91-80-6818-8100",
+      "sourceProvenance": "AICTE National Institutional Portal (PID: 1-11024512)",
+      "isDemoRecord": false,
+      "createdAt": "2026-01-18T09:00:00.000Z"
+    },
+    {
+      "id": "INST-005",
+      "institutionCode": "1-11054321",
+      "name": "Jadavpur University - Faculty of Engineering & Technology",
+      "institutionType": "Engineering & Technology",
+      "state": "West Bengal",
+      "district": "Kolkata",
+      "address": "188, Raja S.C. Mallick Road, Jadavpur, Kolkata, West Bengal 700032",
+      "approvalStatus": "Approved",
+      "contactEmail": "dean_fet@jadavpuruniversity.in",
+      "contactPhone": "+91-33-2414-6666",
+      "sourceProvenance": "AICTE National Institutional Portal (PID: 1-11054321)",
+      "isDemoRecord": false,
+      "createdAt": "2026-01-22T09:00:00.000Z"
+    },
+    {
+      "id": "INST-006",
+      "institutionCode": "1-11089123",
+      "name": "PSG College of Technology",
+      "institutionType": "Engineering & Technology",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "address": "Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004",
+      "approvalStatus": "Approved - Autonomous",
+      "contactEmail": "office@psgtech.edu",
+      "contactPhone": "+91-422-257-2177",
+      "sourceProvenance": "AICTE National Institutional Portal (PID: 1-11089123)",
+      "isDemoRecord": false,
+      "createdAt": "2026-02-01T09:00:00.000Z"
+    },
+    {
+      "id": "INST-007",
+      "institutionCode": "1-11067890",
+      "name": "Delhi Technological University (DTU)",
+      "institutionType": "Engineering & Technology",
+      "state": "Delhi",
+      "district": "North West Delhi",
+      "address": "Shahbad Daulatpur, Main Bawana Road, Delhi 110042",
+      "approvalStatus": "Approved",
+      "contactEmail": "dean_academic@dtu.ac.in",
+      "contactPhone": "+91-11-2787-1018",
+      "sourceProvenance": "AICTE National Institutional Portal (PID: 1-11067890)",
+      "isDemoRecord": false,
+      "createdAt": "2026-02-05T09:00:00.000Z"
+    },
+    {
+      "id": "INST-008",
+      "institutionCode": "1-11098765",
+      "name": "Veermata Jijabai Technological Institute (VJTI)",
+      "institutionType": "Engineering & Technology",
+      "state": "Maharashtra",
+      "district": "Mumbai City",
+      "address": "H R Mahajani Marg, Matunga East, Mumbai, Maharashtra 400019",
+      "approvalStatus": "Approved - Autonomous",
+      "contactEmail": "director@vjti.ac.in",
+      "contactPhone": "+91-22-2419-8101",
+      "sourceProvenance": "AICTE National Institutional Portal (PID: 1-11098765)",
+      "isDemoRecord": false,
+      "createdAt": "2026-02-10T09:00:00.000Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "CAT-GRIEVANCE",
+      "name": "Student grievances",
+      "subcategories": [
+        "Retention of Original Certificates / Fee Refund Delay",
+        "Hostel Welfare & Campus Harassment Redressal",
+        "Non-Constitution of Student Grievance Redressal Committee (SGRC)"
+      ],
+      "defaultBureauId": "BUR-GRIEVANCE",
+      "defaultPriority": "High",
+      "active": true
+    },
+    {
+      "id": "CAT-FACULTY",
+      "name": "Faculty and staffing concerns",
+      "subcategories": [
+        "Non-Payment of Prescribed Scale / Faculty Shortage",
+        "Withholding of Experience Certificate / Relieving Letter",
+        "Deficit in Cadre Ratio & PhD Faculty Norms"
+      ],
+      "defaultBureauId": "BUR-ACADEMIC",
+      "defaultPriority": "High",
+      "active": true
+    },
+    {
+      "id": "CAT-APPROVAL",
+      "name": "Approval and affiliation-related concerns",
+      "subcategories": [
+        "Excess Admission Beyond Sanctioned Intake",
+        "Unapproved Branch / Shift Operation",
+        "Discrepancy in EoA Land / Built-Up Area Affidavit"
+      ],
+      "defaultBureauId": "BUR-APPROVAL",
+      "defaultPriority": "Critical",
+      "active": true
+    },
+    {
+      "id": "CAT-INFRA",
+      "name": "Infrastructure and facilities",
+      "subcategories": [
+        "Inadequate Core Laboratory Equipment / Defective Computers",
+        "Expired Fire Safety NOC / Structural Hazard",
+        "Lack of Barrier-Free Access for Persons with Disabilities (Divyangjan)"
+      ],
+      "defaultBureauId": "BUR-INFRA",
+      "defaultPriority": "Medium",
+      "active": true
+    },
+    {
+      "id": "CAT-FINANCE",
+      "name": "Financial and administrative issues",
+      "subcategories": [
+        "Scholarship Disbursement Delay / Unauthorized Fee Levy",
+        "Collection of Unapproved Development or Capitation Charges",
+        "Non-Refund of Caution Deposit / Library Deposit"
+      ],
+      "defaultBureauId": "BUR-FINANCE",
+      "defaultPriority": "High",
+      "active": true
+    },
+    {
+      "id": "CAT-COMPLIANCE",
+      "name": "Institutional compliance",
+      "subcategories": [
+        "Non-Disclosure of Mandatory Public Information",
+        "Failure to Comply with Ombudsman Orders",
+        "Violation of Anti-Ragging Undertaking Norms"
+      ],
+      "defaultBureauId": "BUR-APPROVAL",
+      "defaultPriority": "Medium",
+      "active": true
+    }
+  ],
+  "priorities": [
+    {
+      "priority": "Critical",
+      "weight": 4,
+      "responseTargetHours": 12,
+      "resolutionTargetDays": 5,
+      "warningThresholdPercent": 60,
+      "escalationRole": "CENTRAL_MONITORING_OFFICER"
+    },
+    {
+      "priority": "High",
+      "weight": 3,
+      "responseTargetHours": 24,
+      "resolutionTargetDays": 10,
+      "warningThresholdPercent": 70,
+      "escalationRole": "CENTRAL_MONITORING_OFFICER"
+    },
+    {
+      "priority": "Medium",
+      "weight": 2,
+      "responseTargetHours": 24,
+      "resolutionTargetDays": 15,
+      "warningThresholdPercent": 75,
+      "escalationRole": "BUREAU_OFFICER"
+    },
+    {
+      "priority": "Low",
+      "weight": 1,
+      "responseTargetHours": 48,
+      "resolutionTargetDays": 21,
+      "warningThresholdPercent": 80,
+      "escalationRole": "BUREAU_OFFICER"
+    }
+  ],
+  "complaints": [
+    {
+      "id": "CMP-0001",
+      "referenceNumber": "AICTE-2026-00001",
+      "title": "Retention of Original 10th/12th Certificates & Delay in Fee Refund Post-Counseling Withdrawal",
+      "description": "First-year engineering students who formally withdrew admissions before the CAP counseling cutoff report that the institution administration has withheld original academic certificates and demanded first-semester fees as penalty before releasing documents.",
+      "category": "Student grievances",
+      "subcategory": "Retention of Original Certificates / Fee Refund Delay",
+      "institutionId": "INST-001",
+      "institutionName": "COEP Technological University",
+      "state": "Maharashtra",
+      "district": "Pune",
+      "bureauId": "BUR-GRIEVANCE",
+      "assignedOfficerId": "USR-BUR-GRIEVANCE",
+      "assignedOfficerName": "Prof. Meera Nair",
+      "priority": "Critical",
+      "status": "Awaiting Institution Response",
+      "sourceChannel": "National Grievance Portal (CPGRAMS)",
+      "complainantType": "Student (Verified)",
+      "affectedCount": 19,
+      "submittedAt": "2026-10-14T08:30:00.000Z",
+      "updatedAt": "2026-10-22T11:15:00.000Z",
+      "firstRespondedAt": "2026-10-14T11:00:00.000Z",
+      "resolvedAt": null,
+      "slaDueAt": "2026-10-19T08:30:00.000Z",
+      "escalationLevel": 2,
+      "isOverdue": true,
+      "isDemoData": false,
+      "resolutionSummary": null
+    },
+    {
+      "id": "CMP-0002",
+      "referenceNumber": "AICTE-2026-00002",
+      "title": "Original Transfer Certificates Retained for 12 Students Despite Regulatory Cutoff Compliance",
+      "description": "Representation submitted on behalf of 12 admitted students reporting that original migration and transfer certificates are withheld by the college registrar despite formal resignation receipts issued within the counseling refund window.",
+      "category": "Student grievances",
+      "subcategory": "Retention of Original Certificates / Fee Refund Delay",
+      "institutionId": "INST-001",
+      "institutionName": "COEP Technological University",
+      "state": "Maharashtra",
+      "district": "Pune",
+      "bureauId": "BUR-GRIEVANCE",
+      "assignedOfficerId": "USR-BUR-GRIEVANCE",
+      "assignedOfficerName": "Prof. Meera Nair",
+      "priority": "High",
+      "status": "Under Investigation",
+      "sourceChannel": "AICTE Student Redressal Portal",
+      "complainantType": "Parent / Guardian",
+      "affectedCount": 12,
+      "submittedAt": "2026-10-17T10:20:00.000Z",
+      "updatedAt": "2026-10-21T15:00:00.000Z",
+      "firstRespondedAt": "2026-10-17T15:00:00.000Z",
+      "resolvedAt": null,
+      "slaDueAt": "2026-10-27T10:20:00.000Z",
+      "escalationLevel": 0,
+      "isOverdue": false,
+      "isDemoData": false,
+      "resolutionSummary": null
+    },
+    {
+      "id": "CMP-0003",
+      "referenceNumber": "AICTE-2026-00003",
+      "title": "Alleged Excess Admission of 42 Students Beyond Sanctioned EoA Intake in AI & Data Science",
+      "description": "Scrutiny audit representation alleging that the institution enrolled 162 candidates against an approved EoA quota of 120 seats in B.Tech Artificial Intelligence & Data Science under unapproved management quota conversions.",
+      "category": "Approval and affiliation-related concerns",
+      "subcategory": "Excess Admission Beyond Sanctioned Intake",
+      "institutionId": "INST-003",
+      "institutionName": "Harcourt Butler Technical University (HBTU)",
+      "state": "Uttar Pradesh",
+      "district": "Kanpur Nagar",
+      "bureauId": "BUR-APPROVAL",
+      "assignedOfficerId": "USR-BUR-APPROVAL",
+      "assignedOfficerName": "Dr. R. K. Verma",
+      "priority": "Critical",
+      "status": "Escalated",
+      "sourceChannel": "State Directorate Audit Triage",
+      "complainantType": "State Technical Audit Committee",
+      "affectedCount": 42,
+      "submittedAt": "2026-10-08T09:00:00.000Z",
+      "updatedAt": "2026-10-23T16:40:00.000Z",
+      "firstRespondedAt": "2026-10-08T13:20:00.000Z",
+      "resolvedAt": null,
+      "slaDueAt": "2026-10-13T09:00:00.000Z",
+      "escalationLevel": 3,
+      "isOverdue": true,
+      "isDemoData": false,
+      "resolutionSummary": null
+    },
+    {
+      "id": "CMP-0004",
+      "referenceNumber": "AICTE-2026-00004",
+      "title": "Five-Month Arrears in Faculty Salary Disbursement & Non-Remittance of EPF Contributions",
+      "description": "Faculty forum representation signed by 28 assistant and associate professors reporting non-disbursement of monthly salaries since May 2026 alongside failure to credit employee provident fund deductions.",
+      "category": "Faculty and staffing concerns",
+      "subcategory": "Non-Payment of Prescribed Scale / Faculty Shortage",
+      "institutionId": "INST-002",
+      "institutionName": "JNTU College of Engineering, Hyderabad",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "bureauId": "BUR-ACADEMIC",
+      "assignedOfficerId": "USR-BUR-ACADEMIC",
+      "assignedOfficerName": "Dr. Arvind Deshmukh",
+      "priority": "High",
+      "status": "Resolution Proposed",
+      "sourceChannel": "Faculty Welfare Association Filing",
+      "complainantType": "Faculty Member",
+      "affectedCount": 28,
+      "submittedAt": "2026-10-11T07:45:00.000Z",
+      "updatedAt": "2026-10-24T10:30:00.000Z",
+      "firstRespondedAt": "2026-10-11T14:10:00.000Z",
+      "resolvedAt": null,
+      "slaDueAt": "2026-10-21T07:45:00.000Z",
+      "escalationLevel": 1,
+      "isOverdue": true,
+      "isDemoData": false,
+      "resolutionSummary": "Institution submitted bank RTGS/NEFT clearance proofs for 3 months arrears and furnished an irrevocable board undertaking for the remaining balance within 15 days."
+    },
+    {
+      "id": "CMP-0005",
+      "referenceNumber": "AICTE-2026-00005",
+      "title": "Expired Fire Safety NOC and Inadequate Chemical Exhaust in Core Chemistry Laboratories",
+      "description": "Safety audit notice indicating that the departmental chemical synthesis labs are operating with expired local municipal Fire Safety NOC certificates and defective fume filtration equipment.",
+      "category": "Infrastructure and facilities",
+      "subcategory": "Expired Fire Safety NOC / Structural Hazard",
+      "institutionId": "INST-005",
+      "institutionName": "Jadavpur University - Faculty of Engineering & Technology",
+      "state": "West Bengal",
+      "district": "Kolkata",
+      "bureauId": "BUR-INFRA",
+      "assignedOfficerId": null,
+      "assignedOfficerName": "Smt. Kavita Rao",
+      "priority": "Critical",
+      "status": "Under Investigation",
+      "sourceChannel": "Fire & Safety Directorate Inspection",
+      "complainantType": "Safety Inspector / Student Council",
+      "affectedCount": 65,
+      "submittedAt": "2026-10-19T11:00:00.000Z",
+      "updatedAt": "2026-10-25T09:15:00.000Z",
+      "firstRespondedAt": "2026-10-19T14:30:00.000Z",
+      "resolvedAt": null,
+      "slaDueAt": "2026-10-24T11:00:00.000Z",
+      "escalationLevel": 1,
+      "isOverdue": true,
+      "isDemoData": false,
+      "resolutionSummary": null
+    },
+    {
+      "id": "CMP-0006",
+      "referenceNumber": "AICTE-2026-00006",
+      "title": "Delay in Biometric Verification Upload for AICTE Post Graduate Scholarship Cohort",
+      "description": "Thirty-four GATE-qualified M.Tech scholars report institutional administrative delay in uploading monthly biometric attendance rosters to the National Scholarship Portal, impeding stipend disbursement.",
+      "category": "Financial and administrative issues",
+      "subcategory": "Scholarship Disbursement Delay / Unauthorized Fee Levy",
+      "institutionId": "INST-007",
+      "institutionName": "Delhi Technological University (DTU)",
+      "state": "Delhi",
+      "district": "North West Delhi",
+      "bureauId": "BUR-FINANCE",
+      "assignedOfficerId": null,
+      "assignedOfficerName": "Shri S. Natarajan",
+      "priority": "High",
+      "status": "Resolved",
+      "sourceChannel": "Scholarship Redressal Desk",
+      "complainantType": "M.Tech Research Scholar",
+      "affectedCount": 34,
+      "submittedAt": "2026-09-12T10:00:00.000Z",
+      "updatedAt": "2026-09-20T16:00:00.000Z",
+      "firstRespondedAt": "2026-09-12T15:00:00.000Z",
+      "resolvedAt": "2026-09-20T16:00:00.000Z",
+      "slaDueAt": "2026-09-22T10:00:00.000Z",
+      "escalationLevel": 0,
+      "isOverdue": false,
+      "isDemoData": false,
+      "resolutionSummary": "Institution nodal officer uploaded biometric attendance rosters for all 34 scholars; verified by AICTE Finance Bureau and scholarship credits initiated."
+    },
+    {
+      "id": "CMP-0007",
+      "referenceNumber": "AICTE-2026-00007",
+      "title": "Absence of Updated Mandatory Public Disclosure & Faculty Roster on Official Website",
+      "description": "Regulatory scrutiny noting non-compliance with AICTE Mandatory Disclosure guidelines for Academic Year 2026-27, including missing audited financial accounts and approved faculty credentials on portal.",
+      "category": "Institutional compliance",
+      "subcategory": "Non-Disclosure of Mandatory Public Information",
+      "institutionId": "INST-004",
+      "institutionName": "R.V. College of Engineering (RVCE)",
+      "state": "Karnataka",
+      "district": "Bengaluru Urban",
+      "bureauId": "BUR-APPROVAL",
+      "assignedOfficerId": "USR-BUR-APPROVAL",
+      "assignedOfficerName": "Dr. R. K. Verma",
+      "priority": "Medium",
+      "status": "Resolved",
+      "sourceChannel": "Public Transparency Scrutiny",
+      "complainantType": "Public Stakeholder",
+      "affectedCount": 1,
+      "submittedAt": "2026-08-05T09:30:00.000Z",
+      "updatedAt": "2026-08-16T14:20:00.000Z",
+      "firstRespondedAt": "2026-08-05T16:00:00.000Z",
+      "resolvedAt": "2026-08-16T14:20:00.000Z",
+      "slaDueAt": "2026-08-20T09:30:00.000Z",
+      "escalationLevel": 0,
+      "isOverdue": false,
+      "isDemoData": false,
+      "resolutionSummary": "Institution published updated Mandatory Disclosure documentation, committee compositions, and faculty roster with verified AICTE URLs."
+    },
+    {
+      "id": "CMP-0008",
+      "referenceNumber": "AICTE-2026-00008",
+      "title": "Levy of Mandatory Unapproved Campus Placement Fee on Final-Year Diploma Students",
+      "description": "Final-year students submitted bank payment receipts indicating compulsory cash levies of Rs. 8,500 under \"Corporate Placement Readiness\" without statutory state fee committee approval.",
+      "category": "Financial and administrative issues",
+      "subcategory": "Collection of Unapproved Development or Capitation Charges",
+      "institutionId": "INST-006",
+      "institutionName": "PSG College of Technology",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "bureauId": "BUR-FINANCE",
+      "assignedOfficerId": null,
+      "assignedOfficerName": "Shri S. Natarajan",
+      "priority": "High",
+      "status": "Resolution Under Review",
+      "sourceChannel": "CPGRAMS Citizen Portal",
+      "complainantType": "Student Council",
+      "affectedCount": 48,
+      "submittedAt": "2026-10-16T12:00:00.000Z",
+      "updatedAt": "2026-10-25T14:00:00.000Z",
+      "firstRespondedAt": "2026-10-16T17:30:00.000Z",
+      "resolvedAt": null,
+      "slaDueAt": "2026-10-26T12:00:00.000Z",
+      "escalationLevel": 0,
+      "isOverdue": false,
+      "isDemoData": false,
+      "resolutionSummary": null
+    },
+    {
+      "id": "CMP-0009",
+      "referenceNumber": "AICTE-2026-00009",
+      "title": "Inaccessible Academic Blocks & Lack of Wheelchair Ramps for Physically Challenged Students",
+      "description": "Representation detailing absence of barrier-free elevators, tactile paving, and accessible restrooms in the architectural studios, violating Divyangjan guidelines of AICTE APH.",
+      "category": "Infrastructure and facilities",
+      "subcategory": "Lack of Barrier-Free Access for Persons with Disabilities (Divyangjan)",
+      "institutionId": "INST-008",
+      "institutionName": "Veermata Jijabai Technological Institute (VJTI)",
+      "state": "Maharashtra",
+      "district": "Mumbai City",
+      "bureauId": "BUR-INFRA",
+      "assignedOfficerId": null,
+      "assignedOfficerName": "Smt. Kavita Rao",
+      "priority": "Medium",
+      "status": "Awaiting Institution Response",
+      "sourceChannel": "Equal Opportunity Cell Referral",
+      "complainantType": "Student Welfare Representative",
+      "affectedCount": 14,
+      "submittedAt": "2026-10-18T10:30:00.000Z",
+      "updatedAt": "2026-10-24T12:00:00.000Z",
+      "firstRespondedAt": "2026-10-18T15:00:00.000Z",
+      "resolvedAt": null,
+      "slaDueAt": "2026-11-02T10:30:00.000Z",
+      "escalationLevel": 0,
+      "isOverdue": false,
+      "isDemoData": false,
+      "resolutionSummary": null
+    },
+    {
+      "id": "CMP-0010",
+      "referenceNumber": "AICTE-2026-00010",
+      "title": "Withholding of Relieving Orders & Experience Certificates for Resigned Assistant Professors",
+      "description": "Four faculty members who completed their contractual three-month notice period report refusal by the institute management to issue formal relieving letters and experience certificates.",
+      "category": "Faculty and staffing concerns",
+      "subcategory": "Withholding of Experience Certificate / Relieving Letter",
+      "institutionId": "INST-002",
+      "institutionName": "JNTU College of Engineering, Hyderabad",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "bureauId": "BUR-ACADEMIC",
+      "assignedOfficerId": "USR-BUR-ACADEMIC",
+      "assignedOfficerName": "Dr. Arvind Deshmukh",
+      "priority": "High",
+      "status": "Assigned",
+      "sourceChannel": "Direct Official Representation",
+      "complainantType": "Assistant Professor",
+      "affectedCount": 4,
+      "submittedAt": "2026-10-23T08:15:00.000Z",
+      "updatedAt": "2026-10-24T11:00:00.000Z",
+      "firstRespondedAt": "2026-10-23T12:00:00.000Z",
+      "resolvedAt": null,
+      "slaDueAt": "2026-11-02T08:15:00.000Z",
+      "escalationLevel": 0,
+      "isOverdue": false,
+      "isDemoData": false,
+      "resolutionSummary": null
+    },
+    {
+      "id": "CMP-0011",
+      "referenceNumber": "AICTE-2026-00011",
+      "title": "Delayed Processing of Full Tuition Fee Refund Following National Counseling Seat Upgrade",
+      "description": "Student secured seat upgrade in Round-3 state admissions counseling and submitted cancellation before October 15. Institution accounts desk has not refunded the initial deposit.",
+      "category": "Student grievances",
+      "subcategory": "Retention of Original Certificates / Fee Refund Delay",
+      "institutionId": "INST-001",
+      "institutionName": "COEP Technological University",
+      "state": "Maharashtra",
+      "district": "Pune",
+      "bureauId": "BUR-GRIEVANCE",
+      "assignedOfficerId": "USR-BUR-GRIEVANCE",
+      "assignedOfficerName": "Prof. Meera Nair",
+      "priority": "High",
+      "status": "Pending Assignment",
+      "sourceChannel": "National Grievance Portal (CPGRAMS)",
+      "complainantType": "Student (Verified)",
+      "affectedCount": 1,
+      "submittedAt": "2026-10-25T14:00:00.000Z",
+      "updatedAt": "2026-10-25T14:00:00.000Z",
+      "firstRespondedAt": null,
+      "resolvedAt": null,
+      "slaDueAt": "2026-11-04T14:00:00.000Z",
+      "escalationLevel": 0,
+      "isOverdue": false,
+      "isDemoData": false,
+      "resolutionSummary": null
+    },
+    {
+      "id": "CMP-0012",
+      "referenceNumber": "AICTE-2026-00012",
+      "title": "Non-Refund of Institutional Caution & Library Deposit for 2025 Graduating Batch",
+      "description": "Graduated engineering batch alumni report institutional failure to return statutory library caution deposits of Rs. 10,000 per student despite full clearances obtained 8 months ago.",
+      "category": "Financial and administrative issues",
+      "subcategory": "Non-Refund of Caution Deposit / Library Deposit",
+      "institutionId": "INST-004",
+      "institutionName": "R.V. College of Engineering (RVCE)",
+      "state": "Karnataka",
+      "district": "Bengaluru Urban",
+      "bureauId": "BUR-FINANCE",
+      "assignedOfficerId": null,
+      "assignedOfficerName": "Shri S. Natarajan",
+      "priority": "Medium",
+      "status": "Reopened",
+      "sourceChannel": "Alumni Association Formal Notice",
+      "complainantType": "Alumni Representative",
+      "affectedCount": 76,
+      "submittedAt": "2026-07-20T10:00:00.000Z",
+      "updatedAt": "2026-10-24T15:00:00.000Z",
+      "firstRespondedAt": "2026-07-21T11:00:00.000Z",
+      "resolvedAt": null,
+      "slaDueAt": "2026-10-28T10:00:00.000Z",
+      "escalationLevel": 1,
+      "isOverdue": false,
+      "isDemoData": false,
+      "resolutionSummary": null
+    },
+    {
+      "id": "CMP-0013",
+      "referenceNumber": "AICTE-2026-00013",
+      "title": "Severe Deficiency in Cadre Ratio & Insufficient Regular Professors in Mechanical Engineering",
+      "description": "Academic quality inspection reveals that against a statutory requirement of 4 Professors and 8 Associate Professors, the department is functioning entirely with temporary ad-hoc lecturers.",
+      "category": "Faculty and staffing concerns",
+      "subcategory": "Deficit in Cadre Ratio & PhD Faculty Norms",
+      "institutionId": "INST-003",
+      "institutionName": "Harcourt Butler Technical University (HBTU)",
+      "state": "Uttar Pradesh",
+      "district": "Kanpur Nagar",
+      "bureauId": "BUR-ACADEMIC",
+      "assignedOfficerId": "USR-BUR-ACADEMIC",
+      "assignedOfficerName": "Dr. Arvind Deshmukh",
+      "priority": "High",
+      "status": "Under Investigation",
+      "sourceChannel": "University Affiliation Inspection Report",
+      "complainantType": "State Academic Council",
+      "affectedCount": 180,
+      "submittedAt": "2026-10-15T09:00:00.000Z",
+      "updatedAt": "2026-10-22T14:00:00.000Z",
+      "firstRespondedAt": "2026-10-15T14:30:00.000Z",
+      "resolvedAt": null,
+      "slaDueAt": "2026-10-25T09:00:00.000Z",
+      "escalationLevel": 1,
+      "isOverdue": true,
+      "isDemoData": false,
+      "resolutionSummary": null
+    },
+    {
+      "id": "CMP-0014",
+      "referenceNumber": "AICTE-2026-00014",
+      "title": "Non-Constitution of Statutory Student Grievance Redressal Committee (SGRC) on Campus",
+      "description": "Grievance highlighting failure of the institute to notify a duly constituted SGRC headed by a retired District Judge or Senior Professor as mandated by AICTE 2019 Regulations.",
+      "category": "Student grievances",
+      "subcategory": "Non-Constitution of Student Grievance Redressal Committee (SGRC)",
+      "institutionId": "INST-006",
+      "institutionName": "PSG College of Technology",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "bureauId": "BUR-GRIEVANCE",
+      "assignedOfficerId": "USR-BUR-GRIEVANCE",
+      "assignedOfficerName": "Prof. Meera Nair",
+      "priority": "Medium",
+      "status": "Resolved",
+      "sourceChannel": "AICTE Compliance Audit",
+      "complainantType": "Student Council",
+      "affectedCount": 1200,
+      "submittedAt": "2026-08-14T11:00:00.000Z",
+      "updatedAt": "2026-08-28T16:00:00.000Z",
+      "firstRespondedAt": "2026-08-15T10:00:00.000Z",
+      "resolvedAt": "2026-08-28T16:00:00.000Z",
+      "slaDueAt": "2026-08-29T11:00:00.000Z",
+      "escalationLevel": 0,
+      "isOverdue": false,
+      "isDemoData": false,
+      "resolutionSummary": "Institution notified SGRC reconstitution circular, appointed independent Ombudsman, and published emergency contact protocols."
+    },
+    {
+      "id": "CMP-0015",
+      "referenceNumber": "AICTE-2026-00015",
+      "title": "Inadequate Computing Workstations & Obsolete Software Versions in Computer Science Lab",
+      "description": "Laboratory inspection reveals a student-to-computer ratio of 6:1 against the mandated 2:1 norm in the Department of Computer Science & Engineering, hindering practical curriculum execution.",
+      "category": "Infrastructure and facilities",
+      "subcategory": "Inadequate Core Laboratory Equipment / Defective Computers",
+      "institutionId": "INST-003",
+      "institutionName": "Harcourt Butler Technical University (HBTU)",
+      "state": "Uttar Pradesh",
+      "district": "Kanpur Nagar",
+      "bureauId": "BUR-INFRA",
+      "assignedOfficerId": null,
+      "assignedOfficerName": "Smt. Kavita Rao",
+      "priority": "High",
+      "status": "Received",
+      "sourceChannel": "National Grievance Portal (CPGRAMS)",
+      "complainantType": "Student (Verified)",
+      "affectedCount": 110,
+      "submittedAt": "2026-10-26T06:30:00.000Z",
+      "updatedAt": "2026-10-26T06:30:00.000Z",
+      "firstRespondedAt": null,
+      "resolvedAt": null,
+      "slaDueAt": "2026-11-05T06:30:00.000Z",
+      "escalationLevel": 0,
+      "isOverdue": false,
+      "isDemoData": false,
+      "resolutionSummary": null
+    },
+    {
+      "id": "CMP-0016",
+      "referenceNumber": "AICTE-2026-00016",
+      "title": "Allegation of Anti-Ragging Guidelines Violation in University Boys Hostel Complex",
+      "description": "Urgent complaint submitted to the National Anti-Ragging Helpline alleging late-night intimidation in the freshman hostel block and failure of hostel wardens to log incidents in the disciplinary register.",
+      "category": "Institutional compliance",
+      "subcategory": "Violation of Anti-Ragging Undertaking Norms",
+      "institutionId": "INST-005",
+      "institutionName": "Jadavpur University - Faculty of Engineering & Technology",
+      "state": "West Bengal",
+      "district": "Kolkata",
+      "bureauId": "BUR-GRIEVANCE",
+      "assignedOfficerId": "USR-BUR-GRIEVANCE",
+      "assignedOfficerName": "Prof. Meera Nair",
+      "priority": "Critical",
+      "status": "Under Investigation",
+      "sourceChannel": "National Anti-Ragging Helpline (Toll-Free)",
+      "complainantType": "Parent / Confidential",
+      "affectedCount": 8,
+      "submittedAt": "2026-10-24T18:00:00.000Z",
+      "updatedAt": "2026-10-25T08:00:00.000Z",
+      "firstRespondedAt": "2026-10-24T19:30:00.000Z",
+      "resolvedAt": null,
+      "slaDueAt": "2026-10-29T18:00:00.000Z",
+      "escalationLevel": 0,
+      "isOverdue": false,
+      "isDemoData": false,
+      "resolutionSummary": null
+    }
+  ],
+  "assignments": [
+    {
+      "id": "ASN-001",
+      "complaintId": "CMP-0001",
+      "fromBureauId": null,
+      "toBureauId": "BUR-GRIEVANCE",
+      "assignedOfficerId": "USR-BUR-GRIEVANCE",
+      "assignedOfficerName": "Prof. Meera Nair",
+      "assignedById": "USR-CMO",
+      "assignedByName": "Dr. Rajeshwar Prasad",
+      "reason": "Primary student document retention and statutory fee refund jurisdiction.",
+      "acknowledged": true,
+      "createdAt": "2026-10-14T11:00:00.000Z"
+    },
+    {
+      "id": "ASN-002",
+      "complaintId": "CMP-0003",
+      "fromBureauId": null,
+      "toBureauId": "BUR-APPROVAL",
+      "assignedOfficerId": "USR-BUR-APPROVAL",
+      "assignedOfficerName": "Dr. R. K. Verma",
+      "assignedById": "USR-CMO",
+      "assignedByName": "Dr. Rajeshwar Prasad",
+      "reason": "Sanctioned intake verification against official EoA records.",
+      "acknowledged": true,
+      "createdAt": "2026-10-08T13:20:00.000Z"
+    },
+    {
+      "id": "ASN-003",
+      "complaintId": "CMP-0004",
+      "fromBureauId": "BUR-FINANCE",
+      "toBureauId": "BUR-ACADEMIC",
+      "assignedOfficerId": "USR-BUR-ACADEMIC",
+      "assignedOfficerName": "Dr. Arvind Deshmukh",
+      "assignedById": "USR-CMO",
+      "assignedByName": "Dr. Rajeshwar Prasad",
+      "reason": "Inter-bureau transfer: Faculty pay scale and cadre compliance falls under Academic Quality Bureau.",
+      "acknowledged": true,
+      "createdAt": "2026-10-12T10:00:00.000Z"
+    }
+  ],
+  "statusHistory": [
+    {
+      "id": "STH-001",
+      "complaintId": "CMP-0001",
+      "previousStatus": null,
+      "newStatus": "Received",
+      "actorId": "SYSTEM",
+      "actorName": "National Intake Gateway",
+      "actorRole": "CENTRAL_MONITORING_OFFICER",
+      "reason": "Complaint registered via CPGRAMS with reference AICTE-2026-00001.",
+      "timestamp": "2026-10-14T08:30:00.000Z"
+    },
+    {
+      "id": "STH-002",
+      "complaintId": "CMP-0001",
+      "previousStatus": "Received",
+      "newStatus": "Assigned",
+      "actorId": "USR-CMO",
+      "actorName": "Dr. Rajeshwar Prasad",
+      "actorRole": "CENTRAL_MONITORING_OFFICER",
+      "reason": "Assigned to Public Grievance Redressal Cell (PGRC) on priority.",
+      "timestamp": "2026-10-14T11:00:00.000Z"
+    },
+    {
+      "id": "STH-003",
+      "complaintId": "CMP-0001",
+      "previousStatus": "Assigned",
+      "newStatus": "Under Investigation",
+      "actorId": "USR-BUR-GRIEVANCE",
+      "actorName": "Prof. Meera Nair",
+      "actorRole": "BUREAU_OFFICER",
+      "reason": "Verified candidate counseling withdrawal dates against state merit cutoff.",
+      "timestamp": "2026-10-15T09:45:00.000Z"
+    },
+    {
+      "id": "STH-004",
+      "complaintId": "CMP-0001",
+      "previousStatus": "Under Investigation",
+      "newStatus": "Awaiting Institution Response",
+      "actorId": "USR-BUR-GRIEVANCE",
+      "actorName": "Prof. Meera Nair",
+      "actorRole": "BUREAU_OFFICER",
+      "reason": "Issued show-cause clarification directive to COEP Nodal Liaison Officer.",
+      "timestamp": "2026-10-16T14:20:00.000Z"
+    },
+    {
+      "id": "STH-005",
+      "complaintId": "CMP-0003",
+      "previousStatus": "Under Investigation",
+      "newStatus": "Escalated",
+      "actorId": "USR-CMO",
+      "actorName": "Dr. Rajeshwar Prasad",
+      "actorRole": "CENTRAL_MONITORING_OFFICER",
+      "reason": "Critical SLA target breached on unapproved admissions; elevated to Level 3 Central Monitoring.",
+      "timestamp": "2026-10-23T16:40:00.000Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "CMT-001",
+      "complaintId": "CMP-0001",
+      "authorId": "USR-BUR-GRIEVANCE",
+      "authorName": "Prof. Meera Nair",
+      "authorRole": "BUREAU_OFFICER",
+      "visibility": "INTERNAL",
+      "noteType": "INVESTIGATION_NOTE",
+      "content": "Cross-checked 19 withdrawal timestamps against state counseling cutoff dates. Applications were filed prior to the last date of cancellation. Institution must refund and return certificates immediately.",
+      "createdAt": "2026-10-15T10:30:00.000Z"
+    },
+    {
+      "id": "CMT-002",
+      "complaintId": "CMP-0001",
+      "authorId": "USR-BUR-GRIEVANCE",
+      "authorName": "Prof. Meera Nair",
+      "authorRole": "BUREAU_OFFICER",
+      "visibility": "INSTITUTION_VISIBLE",
+      "noteType": "CLARIFICATION_REQUEST",
+      "content": "DIRECTIVE TO INSTITUTION LIAISON: Provide verified dispatch status of original certificates and bank NEFT refund transaction reference numbers for the 19 listed students within 48 hours.",
+      "createdAt": "2026-10-16T14:25:00.000Z"
+    },
+    {
+      "id": "CMT-003",
+      "complaintId": "CMP-0003",
+      "authorId": "USR-BUR-APPROVAL",
+      "authorName": "Dr. R. K. Verma",
+      "authorRole": "BUREAU_OFFICER",
+      "visibility": "INTERNAL",
+      "noteType": "SUPERVISORY_DIRECTIVE",
+      "content": "Affiliation cell confirmed only 120 seats were sanctioned in AI & DS for the current academic year. 42 excess students require formal Standing Hearing Committee action.",
+      "createdAt": "2026-10-20T11:15:00.000Z"
+    }
+  ],
+  "institutionResponses": [
+    {
+      "id": "IRESP-001",
+      "complaintId": "CMP-0001",
+      "institutionId": "INST-001",
+      "requestedByName": "Prof. Meera Nair",
+      "requestQuestion": "Submit verified dispatch register of original academic certificates and NEFT refund schedule for the 19 withdrawn students.",
+      "requestedAt": "2026-10-16T14:20:00.000Z",
+      "dueAt": "2026-10-19T14:20:00.000Z",
+      "responseText": null,
+      "respondedByName": null,
+      "respondedAt": null,
+      "status": "PENDING"
+    },
+    {
+      "id": "IRESP-002",
+      "complaintId": "CMP-0004",
+      "institutionId": "INST-002",
+      "requestedByName": "Dr. Arvind Deshmukh",
+      "requestQuestion": "Provide bank salary disbursement statements for May–September 2026 and compliance plan for faculty salary arrears.",
+      "requestedAt": "2026-10-13T09:00:00.000Z",
+      "dueAt": "2026-10-18T09:00:00.000Z",
+      "responseText": "The institution has cleared 3 months of pending faculty salary via bulk RTGS batch #JNTU-2026-8841 and executed an escrow agreement for the remaining 2 months balance.",
+      "respondedByName": "Registrar Office — JNTU College of Engineering",
+      "respondedAt": "2026-10-22T16:10:00.000Z",
+      "status": "SUBMITTED"
+    }
+  ],
+  "attachments": [
+    {
+      "id": "ATT-001",
+      "complaintId": "CMP-0001",
+      "fileName": "Counseling_Withdrawal_Acknowledgment_Receipts.pdf",
+      "fileType": "application/pdf",
+      "fileSizeBytes": 428500,
+      "uploadedByName": "Student Council Representative",
+      "uploadedAt": "2026-10-14T08:31:00.000Z",
+      "checksumSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "ATT-002",
+      "complaintId": "CMP-0003",
+      "fileName": "EoA_Approved_Intake_Matrix_2026.pdf",
+      "fileType": "application/pdf",
+      "fileSizeBytes": 812400,
+      "uploadedByName": "State Technical Directorate Inspection Cell",
+      "uploadedAt": "2026-10-08T09:05:00.000Z",
+      "checksumSha256": "8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "REL-001",
+      "sourceComplaintId": "CMP-0002",
+      "targetComplaintId": "CMP-0001",
+      "relationshipType": "SUSPECTED_DUPLICATE",
+      "similarityScore": 89,
+      "matchReasons": [
+        "Identical Institution (COEP Technological University)",
+        "Matching Category (Student grievances — Retention of Original Certificates / Fee Refund)",
+        "Lexical overlap on core terms: original certificates, refund, withdrawal, cutoff receipts",
+        "Submitted within 72 hours of initial filing"
+      ],
+      "confirmedByName": null,
+      "confirmedAt": null,
+      "status": "SUSPECTED"
+    },
+    {
+      "id": "REL-002",
+      "sourceComplaintId": "CMP-0011",
+      "targetComplaintId": "CMP-0001",
+      "relationshipType": "RELATED_INSTITUTION_ISSUE",
+      "similarityScore": 61,
+      "matchReasons": [
+        "Identical Institution (COEP Technological University)",
+        "Concurrent active complaints during current admissions cycle"
+      ],
+      "confirmedByName": "Dr. Rajeshwar Prasad",
+      "confirmedAt": "2026-10-25T14:00:00.000Z",
+      "status": "CONFIRMED"
+    }
+  ],
+  "escalations": [
+    {
+      "id": "ESC-001",
+      "complaintId": "CMP-0003",
+      "complaintRef": "AICTE-2026-00003",
+      "complaintTitle": "Alleged Excess Admission of 42 Students Beyond Sanctioned EoA Intake in AI & Data Science",
+      "bureauId": "BUR-APPROVAL",
+      "priority": "Critical",
+      "escalationLevel": 3,
+      "reason": "Critical-priority case exceeded 5-day resolution target by > 10 days; escalated to Central Monitoring Director.",
+      "assignedOwnerRole": "CENTRAL_MONITORING_OFFICER",
+      "assignedOwnerName": "Dr. Rajeshwar Prasad",
+      "triggeredAt": "2026-10-18T09:00:00.000Z",
+      "acknowledged": true,
+      "acknowledgedBy": "Dr. Rajeshwar Prasad",
+      "acknowledgedAt": "2026-10-18T11:30:00.000Z",
+      "resolved": false
+    },
+    {
+      "id": "ESC-002",
+      "complaintId": "CMP-0001",
+      "complaintRef": "AICTE-2026-00001",
+      "complaintTitle": "Retention of Original 10th/12th Certificates & Delay in Fee Refund Post-Counseling Withdrawal",
+      "bureauId": "BUR-GRIEVANCE",
+      "priority": "Critical",
+      "escalationLevel": 2,
+      "reason": "Institution response overdue past statutory 72-hour show-cause window.",
+      "assignedOwnerRole": "CENTRAL_MONITORING_OFFICER",
+      "assignedOwnerName": "Dr. Rajeshwar Prasad",
+      "triggeredAt": "2026-10-20T09:00:00.000Z",
+      "acknowledged": false,
+      "acknowledgedBy": null,
+      "acknowledgedAt": null,
+      "resolved": false
+    },
+    {
+      "id": "ESC-003",
+      "complaintId": "CMP-0005",
+      "complaintRef": "AICTE-2026-00005",
+      "complaintTitle": "Expired Fire Safety NOC and Inadequate Chemical Exhaust in Core Chemistry Laboratories",
+      "bureauId": "BUR-INFRA",
+      "priority": "Critical",
+      "escalationLevel": 1,
+      "reason": "Critical campus safety inspection target elapsed; requires priority physical inspection.",
+      "assignedOwnerRole": "CENTRAL_MONITORING_OFFICER",
+      "assignedOwnerName": "Dr. Rajeshwar Prasad",
+      "triggeredAt": "2026-10-24T12:00:00.000Z",
+      "acknowledged": false,
+      "acknowledgedBy": null,
+      "acknowledgedAt": null,
+      "resolved": false
+    }
+  ],
+  "aiAssessments": {
+    "CMP-0001": {
+      "id": "AI-ASSESS-CMP-0001",
+      "complaintId": "CMP-0001",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Student grievances",
+      "suggestedSubcategory": "Retention of Original Certificates / Fee Refund Delay",
+      "suggestedPriority": "Critical",
+      "suggestedBureauId": "BUR-GRIEVANCE",
+      "confidenceScore": 92,
+      "priorityFactors": [
+        {
+          "factor": "Group Impact",
+          "impact": "19 individuals reported affected",
+          "scoreContribution": 18
+        },
+        {
+          "factor": "Student Welfare",
+          "impact": "Matched indicator \"withheld\"",
+          "scoreContribution": 24
+        },
+        {
+          "factor": "Financial Impact",
+          "impact": "Matched indicator \"fee refund\"",
+          "scoreContribution": 18
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Retention of Original 10th/12th Certificates & Delay in Fee Refund Post-Counseling Withdrawal reported concerning COEP Technological University.",
+        "institutionInvolved": "COEP Technological University",
+        "reportedAllegations": [
+          "Complainant alleges: \"First-year engineering students who formally withdrew admissions before the CAP counseling cutoff report that the institution administration has withheld original academic certific...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 19 person(s)."
+        ],
+        "evidenceSupplied": "Complainant references supporting documentation in text; requires officer verification.",
+        "missingInformation": [
+          "Specific chronological dates of the alleged incident or transaction.",
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-GRIEVANCE and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Student grievances (BUR-GRIEVANCE).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Specific chronological dates of the alleged incident or transaction.",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 100/100 recommends Critical track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [
+        {
+          "term": "withheld",
+          "signalCategory": "Student Welfare",
+          "note": "Indicates time-sensitive academic progression or original document retention impact."
+        },
+        {
+          "term": "fee refund",
+          "signalCategory": "Financial Impact",
+          "note": "Highlights financial hardship or fee/stipend irregularity."
+        }
+      ],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "ACCEPTED",
+      "reviewedByName": "Dr. Rajeshwar Prasad",
+      "reviewedAt": "2026-10-22T11:15:00.000Z",
+      "generatedAt": "2026-10-27T14:36:09.344Z"
+    },
+    "CMP-0002": {
+      "id": "AI-ASSESS-CMP-0002",
+      "complaintId": "CMP-0002",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Student grievances",
+      "suggestedSubcategory": "Retention of Original Certificates / Fee Refund Delay",
+      "suggestedPriority": "Critical",
+      "suggestedBureauId": "BUR-GRIEVANCE",
+      "confidenceScore": 81,
+      "priorityFactors": [
+        {
+          "factor": "Group Impact",
+          "impact": "12 individuals reported affected",
+          "scoreContribution": 18
+        },
+        {
+          "factor": "Student Welfare",
+          "impact": "Matched indicator \"retained\"",
+          "scoreContribution": 24
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Original Transfer Certificates Retained for 12 Students Despite Regulatory Cutoff Compliance reported concerning COEP Technological University.",
+        "institutionInvolved": "COEP Technological University",
+        "reportedAllegations": [
+          "Complainant alleges: \"Representation submitted on behalf of 12 admitted students reporting that original migration and transfer certificates are withheld by the college registrar despite formal resignat...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 12 person(s)."
+        ],
+        "evidenceSupplied": "Complainant references supporting documentation in text; requires officer verification.",
+        "missingInformation": [
+          "Specific chronological dates of the alleged incident or transaction."
+        ],
+        "suggestedNextStep": "Route to BUR-GRIEVANCE and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Student grievances (BUR-GRIEVANCE).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Specific chronological dates of the alleged incident or transaction.",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 82/100 recommends Critical track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [
+        {
+          "term": "retained",
+          "signalCategory": "Student Welfare",
+          "note": "Indicates time-sensitive academic progression or original document retention impact."
+        }
+      ],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0003": {
+      "id": "AI-ASSESS-CMP-0003",
+      "complaintId": "CMP-0003",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Approval and affiliation-related concerns",
+      "suggestedSubcategory": "Excess Admission Beyond Sanctioned Intake",
+      "suggestedPriority": "Critical",
+      "suggestedBureauId": "BUR-APPROVAL",
+      "confidenceScore": 88,
+      "priorityFactors": [
+        {
+          "factor": "Group Impact",
+          "impact": "42 individuals reported affected",
+          "scoreContribution": 18
+        },
+        {
+          "factor": "Compliance Risk",
+          "impact": "Matched indicator \"unapproved\"",
+          "scoreContribution": 24
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Alleged Excess Admission of 42 Students Beyond Sanctioned EoA Intake in AI & Data Science reported concerning Harcourt Butler Technical University (HBTU).",
+        "institutionInvolved": "Harcourt Butler Technical University (HBTU)",
+        "reportedAllegations": [
+          "Complainant alleges: \"Scrutiny audit representation alleging that the institution enrolled 162 candidates against an approved EoA quota of 120 seats in B.Tech Artificial Intelligence & Data Science unde...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 42 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-APPROVAL and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Approval and affiliation-related concerns (BUR-APPROVAL).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy).",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 82/100 recommends Critical track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [
+        {
+          "term": "unapproved",
+          "signalCategory": "Compliance Risk",
+          "note": "Flags potential regulatory norm deviation subject to documentary verification."
+        }
+      ],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "ACCEPTED",
+      "reviewedByName": "Dr. Rajeshwar Prasad",
+      "reviewedAt": "2026-10-23T16:40:00.000Z",
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0004": {
+      "id": "AI-ASSESS-CMP-0004",
+      "complaintId": "CMP-0004",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Faculty and staffing concerns",
+      "suggestedSubcategory": "Non-Payment of Prescribed Scale / Faculty Shortage",
+      "suggestedPriority": "High",
+      "suggestedBureauId": "BUR-ACADEMIC",
+      "confidenceScore": 88,
+      "priorityFactors": [
+        {
+          "factor": "Group Impact",
+          "impact": "28 individuals reported affected",
+          "scoreContribution": 18
+        },
+        {
+          "factor": "Financial Impact",
+          "impact": "Matched indicator \"salary\"",
+          "scoreContribution": 18
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Five-Month Arrears in Faculty Salary Disbursement & Non-Remittance of EPF Contributions reported concerning JNTU College of Engineering, Hyderabad.",
+        "institutionInvolved": "JNTU College of Engineering, Hyderabad",
+        "reportedAllegations": [
+          "Complainant alleges: \"Faculty forum representation signed by 28 assistant and associate professors reporting non-disbursement of monthly salaries since May 2026 alongside failure to credit employee prov...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 28 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-ACADEMIC and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Faculty and staffing concerns (BUR-ACADEMIC).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy).",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 76/100 recommends High track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [
+        {
+          "term": "salary",
+          "signalCategory": "Financial Impact",
+          "note": "Highlights financial hardship or fee/stipend irregularity."
+        }
+      ],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0005": {
+      "id": "AI-ASSESS-CMP-0005",
+      "complaintId": "CMP-0005",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Infrastructure and facilities",
+      "suggestedSubcategory": "Laboratory Equipment & Safety Deficit",
+      "suggestedPriority": "Critical",
+      "suggestedBureauId": "BUR-INFRA",
+      "confidenceScore": 81,
+      "priorityFactors": [
+        {
+          "factor": "Cohort Scale Impact",
+          "impact": "65 individuals reported affected (>= 50 threshold)",
+          "scoreContribution": 30
+        },
+        {
+          "factor": "Safety/Infrastructure",
+          "impact": "Matched indicator \"safety\"",
+          "scoreContribution": 28
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Expired Fire Safety NOC and Inadequate Chemical Exhaust in Core Chemistry Laboratories reported concerning Jadavpur University - Faculty of Engineering & Technology.",
+        "institutionInvolved": "Jadavpur University - Faculty of Engineering & Technology",
+        "reportedAllegations": [
+          "Complainant alleges: \"Safety audit notice indicating that the departmental chemical synthesis labs are operating with expired local municipal Fire Safety NOC certificates and defective fume filtration e...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 65 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Specific chronological dates of the alleged incident or transaction.",
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-INFRA and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Infrastructure and facilities (BUR-INFRA).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Specific chronological dates of the alleged incident or transaction.",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 98/100 recommends Critical track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [
+        {
+          "term": "safety",
+          "signalCategory": "Safety/Infrastructure",
+          "note": "Contains campus safety or student well-being risk terminology requiring expedited verification."
+        }
+      ],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0006": {
+      "id": "AI-ASSESS-CMP-0006",
+      "complaintId": "CMP-0006",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Financial and administrative issues",
+      "suggestedSubcategory": "Scholarship Disbursement Delay / Unauthorized Fee Levy",
+      "suggestedPriority": "High",
+      "suggestedBureauId": "BUR-FINANCE",
+      "confidenceScore": 88,
+      "priorityFactors": [
+        {
+          "factor": "Group Impact",
+          "impact": "34 individuals reported affected",
+          "scoreContribution": 18
+        },
+        {
+          "factor": "Financial Impact",
+          "impact": "Matched indicator \"scholarship\"",
+          "scoreContribution": 18
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Delay in Biometric Verification Upload for AICTE Post Graduate Scholarship Cohort reported concerning Delhi Technological University (DTU).",
+        "institutionInvolved": "Delhi Technological University (DTU)",
+        "reportedAllegations": [
+          "Complainant alleges: \"Thirty-four GATE-qualified M.Tech scholars report institutional administrative delay in uploading monthly biometric attendance rosters to the National Scholarship Portal, impeding ...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 34 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-FINANCE and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Financial and administrative issues (BUR-FINANCE).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy).",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 76/100 recommends High track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [
+        {
+          "term": "scholarship",
+          "signalCategory": "Financial Impact",
+          "note": "Highlights financial hardship or fee/stipend irregularity."
+        }
+      ],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "ACCEPTED",
+      "reviewedByName": "Dr. Rajeshwar Prasad",
+      "reviewedAt": "2026-09-20T16:00:00.000Z",
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0007": {
+      "id": "AI-ASSESS-CMP-0007",
+      "complaintId": "CMP-0007",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Institutional compliance",
+      "suggestedSubcategory": "Non-Disclosure of Mandatory Public Information",
+      "suggestedPriority": "High",
+      "suggestedBureauId": "BUR-APPROVAL",
+      "confidenceScore": 94,
+      "priorityFactors": [
+        {
+          "factor": "Individual / Localized Scope",
+          "impact": "1 individual(s) reported",
+          "scoreContribution": 8
+        },
+        {
+          "factor": "Compliance Risk",
+          "impact": "Matched indicator \"non-compliance\"",
+          "scoreContribution": 24
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Absence of Updated Mandatory Public Disclosure & Faculty Roster on Official Website reported concerning R.V. College of Engineering (RVCE).",
+        "institutionInvolved": "R.V. College of Engineering (RVCE)",
+        "reportedAllegations": [
+          "Complainant alleges: \"Regulatory scrutiny noting non-compliance with AICTE Mandatory Disclosure guidelines for Academic Year 2026-27, including missing audited financial accounts and approved faculty cr...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 1 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-APPROVAL and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Institutional compliance (BUR-APPROVAL).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy).",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 72/100 recommends High track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [
+        {
+          "term": "non-compliance",
+          "signalCategory": "Compliance Risk",
+          "note": "Flags potential regulatory norm deviation subject to documentary verification."
+        }
+      ],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0008": {
+      "id": "AI-ASSESS-CMP-0008",
+      "complaintId": "CMP-0008",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Institutional compliance",
+      "suggestedSubcategory": "Non-Disclosure of Mandatory Public Information",
+      "suggestedPriority": "Critical",
+      "suggestedBureauId": "BUR-APPROVAL",
+      "confidenceScore": 81,
+      "priorityFactors": [
+        {
+          "factor": "Group Impact",
+          "impact": "48 individuals reported affected",
+          "scoreContribution": 18
+        },
+        {
+          "factor": "Compliance Risk",
+          "impact": "Matched indicator \"unapproved\"",
+          "scoreContribution": 24
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Levy of Mandatory Unapproved Campus Placement Fee on Final-Year Diploma Students reported concerning PSG College of Technology.",
+        "institutionInvolved": "PSG College of Technology",
+        "reportedAllegations": [
+          "Complainant alleges: \"Final-year students submitted bank payment receipts indicating compulsory cash levies of Rs. 8,500 under \"Corporate Placement Readiness\" without statutory state fee committee appro...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 48 person(s)."
+        ],
+        "evidenceSupplied": "Complainant references supporting documentation in text; requires officer verification.",
+        "missingInformation": [
+          "Specific chronological dates of the alleged incident or transaction."
+        ],
+        "suggestedNextStep": "Route to BUR-APPROVAL and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Institutional compliance (BUR-APPROVAL).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Specific chronological dates of the alleged incident or transaction.",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 82/100 recommends Critical track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [
+        {
+          "term": "unapproved",
+          "signalCategory": "Compliance Risk",
+          "note": "Flags potential regulatory norm deviation subject to documentary verification."
+        }
+      ],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0009": {
+      "id": "AI-ASSESS-CMP-0009",
+      "complaintId": "CMP-0009",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Infrastructure and facilities",
+      "suggestedSubcategory": "Laboratory Equipment & Safety Deficit",
+      "suggestedPriority": "Medium",
+      "suggestedBureauId": "BUR-INFRA",
+      "confidenceScore": 77,
+      "priorityFactors": [
+        {
+          "factor": "Group Impact",
+          "impact": "14 individuals reported affected",
+          "scoreContribution": 18
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Inaccessible Academic Blocks & Lack of Wheelchair Ramps for Physically Challenged Students reported concerning Veermata Jijabai Technological Institute (VJTI).",
+        "institutionInvolved": "Veermata Jijabai Technological Institute (VJTI)",
+        "reportedAllegations": [
+          "Complainant alleges: \"Representation detailing absence of barrier-free elevators, tactile paving, and accessible restrooms in the architectural studios, violating Divyangjan guidelines of AICTE APH.\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 14 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Specific chronological dates of the alleged incident or transaction.",
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-INFRA and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Infrastructure and facilities (BUR-INFRA).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Specific chronological dates of the alleged incident or transaction.",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Schedule Standard Bureau Review",
+          "rationale": "Calculated priority score of 58/100 recommends Medium track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0010": {
+      "id": "AI-ASSESS-CMP-0010",
+      "complaintId": "CMP-0010",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Faculty and staffing concerns",
+      "suggestedSubcategory": "Non-Payment of Prescribed Scale / Faculty Shortage",
+      "suggestedPriority": "Medium",
+      "suggestedBureauId": "BUR-ACADEMIC",
+      "confidenceScore": 70,
+      "priorityFactors": [
+        {
+          "factor": "Individual / Localized Scope",
+          "impact": "4 individual(s) reported",
+          "scoreContribution": 8
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Withholding of Relieving Orders & Experience Certificates for Resigned Assistant Professors reported concerning JNTU College of Engineering, Hyderabad.",
+        "institutionInvolved": "JNTU College of Engineering, Hyderabad",
+        "reportedAllegations": [
+          "Complainant alleges: \"Four faculty members who completed their contractual three-month notice period report refusal by the institute management to issue formal relieving letters and experience certifica...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 4 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Official institutional rebuttal and verified compliance register extract."
+        ],
+        "suggestedNextStep": "Route to BUR-ACADEMIC and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Faculty and staffing concerns (BUR-ACADEMIC).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Official institutional rebuttal and verified compliance register extract.",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Schedule Standard Bureau Review",
+          "rationale": "Calculated priority score of 48/100 recommends Medium track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0011": {
+      "id": "AI-ASSESS-CMP-0011",
+      "complaintId": "CMP-0011",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Student grievances",
+      "suggestedSubcategory": "Retention of Original Certificates / Fee Refund Delay",
+      "suggestedPriority": "High",
+      "suggestedBureauId": "BUR-GRIEVANCE",
+      "confidenceScore": 81,
+      "priorityFactors": [
+        {
+          "factor": "Individual / Localized Scope",
+          "impact": "1 individual(s) reported",
+          "scoreContribution": 8
+        },
+        {
+          "factor": "Financial Impact",
+          "impact": "Matched indicator \"fee refund\"",
+          "scoreContribution": 18
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Delayed Processing of Full Tuition Fee Refund Following National Counseling Seat Upgrade reported concerning COEP Technological University.",
+        "institutionInvolved": "COEP Technological University",
+        "reportedAllegations": [
+          "Complainant alleges: \"Student secured seat upgrade in Round-3 state admissions counseling and submitted cancellation before October 15. Institution accounts desk has not refunded the initial deposit.\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 1 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Specific chronological dates of the alleged incident or transaction.",
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-GRIEVANCE and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Student grievances (BUR-GRIEVANCE).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Specific chronological dates of the alleged incident or transaction.",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 66/100 recommends High track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [
+        {
+          "term": "fee refund",
+          "signalCategory": "Financial Impact",
+          "note": "Highlights financial hardship or fee/stipend irregularity."
+        }
+      ],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0012": {
+      "id": "AI-ASSESS-CMP-0012",
+      "complaintId": "CMP-0012",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Student grievances",
+      "suggestedSubcategory": "Retention of Original Certificates / Fee Refund Delay",
+      "suggestedPriority": "Critical",
+      "suggestedBureauId": "BUR-GRIEVANCE",
+      "confidenceScore": 81,
+      "priorityFactors": [
+        {
+          "factor": "Cohort Scale Impact",
+          "impact": "76 individuals reported affected (>= 50 threshold)",
+          "scoreContribution": 30
+        },
+        {
+          "factor": "Financial Impact",
+          "impact": "Matched indicator \"caution deposit\"",
+          "scoreContribution": 18
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Non-Refund of Institutional Caution & Library Deposit for 2025 Graduating Batch reported concerning R.V. College of Engineering (RVCE).",
+        "institutionInvolved": "R.V. College of Engineering (RVCE)",
+        "reportedAllegations": [
+          "Complainant alleges: \"Graduated engineering batch alumni report institutional failure to return statutory library caution deposits of Rs. 10,000 per student despite full clearances obtained 8 months ago...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 76 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-GRIEVANCE and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Student grievances (BUR-GRIEVANCE).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy).",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 88/100 recommends Critical track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [
+        {
+          "term": "caution deposit",
+          "signalCategory": "Financial Impact",
+          "note": "Highlights financial hardship or fee/stipend irregularity."
+        }
+      ],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0013": {
+      "id": "AI-ASSESS-CMP-0013",
+      "complaintId": "CMP-0013",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Faculty and staffing concerns",
+      "suggestedSubcategory": "Non-Payment of Prescribed Scale / Faculty Shortage",
+      "suggestedPriority": "High",
+      "suggestedBureauId": "BUR-ACADEMIC",
+      "confidenceScore": 77,
+      "priorityFactors": [
+        {
+          "factor": "Cohort Scale Impact",
+          "impact": "180 individuals reported affected (>= 50 threshold)",
+          "scoreContribution": 30
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Severe Deficiency in Cadre Ratio & Insufficient Regular Professors in Mechanical Engineering reported concerning Harcourt Butler Technical University (HBTU).",
+        "institutionInvolved": "Harcourt Butler Technical University (HBTU)",
+        "reportedAllegations": [
+          "Complainant alleges: \"Academic quality inspection reveals that against a statutory requirement of 4 Professors and 8 Associate Professors, the department is functioning entirely with temporary ad-hoc le...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 180 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Specific chronological dates of the alleged incident or transaction.",
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-ACADEMIC and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Faculty and staffing concerns (BUR-ACADEMIC).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Specific chronological dates of the alleged incident or transaction.",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 70/100 recommends High track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0014": {
+      "id": "AI-ASSESS-CMP-0014",
+      "complaintId": "CMP-0014",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Institutional compliance",
+      "suggestedSubcategory": "Non-Disclosure of Mandatory Public Information",
+      "suggestedPriority": "High",
+      "suggestedBureauId": "BUR-APPROVAL",
+      "confidenceScore": 77,
+      "priorityFactors": [
+        {
+          "factor": "Cohort Scale Impact",
+          "impact": "1200 individuals reported affected (>= 50 threshold)",
+          "scoreContribution": 30
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Non-Constitution of Statutory Student Grievance Redressal Committee (SGRC) on Campus reported concerning PSG College of Technology.",
+        "institutionInvolved": "PSG College of Technology",
+        "reportedAllegations": [
+          "Complainant alleges: \"Grievance highlighting failure of the institute to notify a duly constituted SGRC headed by a retired District Judge or Senior Professor as mandated by AICTE 2019 Regulations.\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 1200 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-APPROVAL and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Institutional compliance (BUR-APPROVAL).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy).",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 70/100 recommends High track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0015": {
+      "id": "AI-ASSESS-CMP-0015",
+      "complaintId": "CMP-0015",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Infrastructure and facilities",
+      "suggestedSubcategory": "Laboratory Equipment & Safety Deficit",
+      "suggestedPriority": "High",
+      "suggestedBureauId": "BUR-INFRA",
+      "confidenceScore": 77,
+      "priorityFactors": [
+        {
+          "factor": "Cohort Scale Impact",
+          "impact": "110 individuals reported affected (>= 50 threshold)",
+          "scoreContribution": 30
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Inadequate Computing Workstations & Obsolete Software Versions in Computer Science Lab reported concerning Harcourt Butler Technical University (HBTU).",
+        "institutionInvolved": "Harcourt Butler Technical University (HBTU)",
+        "reportedAllegations": [
+          "Complainant alleges: \"Laboratory inspection reveals a student-to-computer ratio of 6:1 against the mandated 2:1 norm in the Department of Computer Science & Engineering, hindering practical curriculum e...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 110 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-INFRA and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Infrastructure and facilities (BUR-INFRA).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy).",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 70/100 recommends High track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    },
+    "CMP-0016": {
+      "id": "AI-ASSESS-CMP-0016",
+      "complaintId": "CMP-0016",
+      "engineMode": "DETERMINISTIC_RULE_ENGINE",
+      "suggestedCategory": "Student grievances",
+      "suggestedSubcategory": "Retention of Original Certificates / Fee Refund Delay",
+      "suggestedPriority": "Critical",
+      "suggestedBureauId": "BUR-GRIEVANCE",
+      "confidenceScore": 89,
+      "priorityFactors": [
+        {
+          "factor": "Individual / Localized Scope",
+          "impact": "8 individual(s) reported",
+          "scoreContribution": 8
+        },
+        {
+          "factor": "Safety/Infrastructure",
+          "impact": "Matched indicator \"ragging\"",
+          "scoreContribution": 28
+        },
+        {
+          "factor": "Compliance Risk",
+          "impact": "Matched indicator \"violation\"",
+          "scoreContribution": 24
+        },
+        {
+          "factor": "Distress Indicator",
+          "impact": "Matched indicator \"urgent\"",
+          "scoreContribution": 10
+        }
+      ],
+      "executiveSummary": {
+        "coreIssue": "Allegation of Anti-Ragging Guidelines Violation in University Boys Hostel Complex reported concerning Jadavpur University - Faculty of Engineering & Technology.",
+        "institutionInvolved": "Jadavpur University - Faculty of Engineering & Technology",
+        "reportedAllegations": [
+          "Complainant alleges: \"Urgent complaint submitted to the National Anti-Ragging Helpline alleging late-night intimidation in the freshman hostel block and failure of hostel wardens to log incidents in the...\" (Unverified allegation pending inquiry).",
+          "Reported affected cohort size: 8 person(s)."
+        ],
+        "evidenceSupplied": "Initial narrative submission; primary documentary annexures should be verified.",
+        "missingInformation": [
+          "Specific chronological dates of the alleged incident or transaction.",
+          "Documentary proof reference (e.g., fee receipt number, official circular, or written representation copy)."
+        ],
+        "suggestedNextStep": "Route to BUR-GRIEVANCE and issue structured clarification notice to Institution Liaison Officer."
+      },
+      "suggestedNextActions": [
+        {
+          "action": "Verify Jurisdiction & Assign Bureau Officer",
+          "rationale": "Keyword & taxonomy rules mapped case to Student grievances (BUR-GRIEVANCE).",
+          "ruleTriggered": "RULE-TAXONOMY-01"
+        },
+        {
+          "action": "Request Institutional Clarification & Documentary Records",
+          "rationale": "Specific chronological dates of the alleged incident or transaction.",
+          "ruleTriggered": "RULE-EVIDENCE-02"
+        },
+        {
+          "action": "Enforce Priority SLA Monitoring Window",
+          "rationale": "Calculated priority score of 110/100 recommends Critical track.",
+          "ruleTriggered": "RULE-PRIORITY-03"
+        }
+      ],
+      "urgencySignals": [
+        {
+          "term": "ragging",
+          "signalCategory": "Safety/Infrastructure",
+          "note": "Contains campus safety or student well-being risk terminology requiring expedited verification."
+        },
+        {
+          "term": "violation",
+          "signalCategory": "Compliance Risk",
+          "note": "Flags potential regulatory norm deviation subject to documentary verification."
+        },
+        {
+          "term": "urgent",
+          "signalCategory": "Distress Indicator",
+          "note": "Weak linguistic urgency signal; treated as contextual urgency indicator, not proof of allegation."
+        }
+      ],
+      "explainabilityNotes": "Generated by the Deterministic Rule-Based Assistance Engine using transparent keyword taxonomy, affected cohort thresholds, and compliance risk weights. Allegations are explicitly separated from verified facts.",
+      "limitationsDisclosure": "AI/Rule-based assessment analyzes reported text only and cannot verify the authenticity of uploaded documents or institutional records. Consequential administrative decisions require authorized human officer confirmation.",
+      "humanReviewStatus": "PENDING_REVIEW",
+      "reviewedByName": null,
+      "reviewedAt": null,
+      "generatedAt": "2026-10-27T14:36:09.345Z"
+    }
+  },
+  "aiFeedback": [],
+  "notifications": [
+    {
+      "id": "NOTIF-001",
+      "recipientRole": "ALL",
+      "recipientBureauId": "BUR-GRIEVANCE",
+      "eventType": "ESCALATION",
+      "title": "Level 2 Escalation: AICTE-2026-00001 Overdue",
+      "message": "Institution has not responded within the 72-hour statutory show-cause window regarding retained certificates.",
+      "complaintId": "CMP-0001",
+      "complaintRef": "AICTE-2026-00001",
+      "isRead": false,
+      "createdAt": "2026-10-25T09:00:00.000Z"
+    },
+    {
+      "id": "NOTIF-002",
+      "recipientRole": "CENTRAL_MONITORING_OFFICER",
+      "recipientBureauId": null,
+      "eventType": "RESOLUTION_PROPOSED",
+      "title": "Resolution Proposed: AICTE-2026-00004",
+      "message": "Academic Quality Bureau proposed resolution after verifying RTGS faculty salary clearances.",
+      "complaintId": "CMP-0004",
+      "complaintRef": "AICTE-2026-00004",
+      "isRead": false,
+      "createdAt": "2026-10-24T10:35:00.000Z"
+    },
+    {
+      "id": "NOTIF-003",
+      "recipientRole": "INSTITUTION_LIAISON",
+      "recipientBureauId": null,
+      "eventType": "INFO_REQUEST",
+      "title": "Action Required: Clarification Notice on AICTE-2026-00001",
+      "message": "Public Grievance Cell requires original certificate dispatch proof and refund status.",
+      "complaintId": "CMP-0001",
+      "complaintRef": "AICTE-2026-00001",
+      "isRead": false,
+      "createdAt": "2026-10-16T14:25:00.000Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "AUD-001",
+      "actorId": "USR-CMO",
+      "actorName": "Dr. Rajeshwar Prasad",
+      "actorRole": "CENTRAL_MONITORING_OFFICER",
+      "eventType": "ESCALATION_TRIGGERED",
+      "entityType": "COMPLAINT",
+      "entityReference": "AICTE-2026-00003",
+      "summary": "Escalated case to Level 3 Central Monitoring supervision due to breached Critical SLA turnaround.",
+      "reason": "Unapproved excess admission requires Standing Hearing Committee referral.",
+      "timestamp": "2026-10-23T16:40:00.000Z"
+    },
+    {
+      "id": "AUD-002",
+      "actorId": "USR-BUR-ACADEMIC",
+      "actorName": "Dr. Arvind Deshmukh",
+      "actorRole": "BUREAU_OFFICER",
+      "eventType": "STATUS_CHANGED",
+      "entityType": "COMPLAINT",
+      "entityReference": "AICTE-2026-00004",
+      "summary": "Transitioned status from Under Investigation to Resolution Proposed.",
+      "reason": "Verified bank RTGS batch #JNTU-2026-8841 for faculty salary arrears.",
+      "timestamp": "2026-10-24T10:30:00.000Z"
+    },
+    {
+      "id": "AUD-003",
+      "actorId": "USR-CMO",
+      "actorName": "Dr. Rajeshwar Prasad",
+      "actorRole": "CENTRAL_MONITORING_OFFICER",
+      "eventType": "CASE_TRANSFERRED",
+      "entityType": "COMPLAINT",
+      "entityReference": "AICTE-2026-00004",
+      "summary": "Transferred complaint from Finance Bureau to Academic Quality & Faculty Norms Bureau.",
+      "reason": "Faculty pay scale norms fall under Academic Quality Bureau mandate.",
+      "timestamp": "2026-10-12T10:00:00.000Z"
+    }
+  ],
+  "savedSearches": [
+    {
+      "id": "SAV-001",
+      "userId": "USR-CMO",
+      "name": "Critical & Overdue Cases",
+      "filters": {
+        "priority": "Critical",
+        "status": "ALL"
+      },
+      "createdAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "SAV-002",
+      "userId": "USR-CMO",
+      "name": "Awaiting Institution Clarification",
+      "filters": {
+        "status": "Awaiting Institution Response"
+      },
+      "createdAt": "2026-10-16T10:00:00.000Z"
+    }
+  ],
+  "importJobs": []
+}

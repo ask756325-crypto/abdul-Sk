@@ -1,0 +1,1170 @@
+# ROLE AND MISSION
+
+Act as an elite full-stack engineering team consisting of:
+- A senior software architect
+- A principal frontend engineer
+- A senior backend engineer
+- An AI/ML engineer
+- A database architect
+- A cybersecurity engineer
+- A UI/UX designer specializing in government enterprise platforms
+- A data visualization expert
+- A quality assurance engineer
+- A Smart India Hackathon mentor and evaluator
+
+Your mission is to design, develop, test, and deliver a complete, professional, production-oriented web application for the following Smart India Hackathon problem statement.
+
+## OFFICIAL PROBLEM STATEMENT
+
+"Integrated Dashboard for Monitoring and Tracking Institution-Related Complaint Cases Across AICTE Bureaus/Cells."
+
+Build an integrated institutional complaint management and intelligence platform that enables authorized administrators to register, classify, assign, monitor, investigate, escalate, resolve, and analyze institution-related complaints across different AICTE bureaus and cells.
+
+The application must solve the actual operational problem of fragmented complaint tracking, delayed responses, limited visibility, duplicate complaints, weak interdepartmental coordination, poor escalation monitoring, and the absence of a consolidated management dashboard.
+
+Do not create a generic complaint registration website.
+
+Create a sophisticated, AI-assisted Institutional Complaint Intelligence and Resolution Platform that could realistically be demonstrated to government officials and Smart India Hackathon judges.
+
+Project name: "AICTE COMPLAINT INTELLIGENCE HUB"
+
+Tagline: "One Platform. Every Complaint. Complete Accountability."
+
+Make the application visually impressive, functionally complete, secure by design, accessible, responsive, and easy to demonstrate.
+
+IMPORTANT: Do not claim that this is an official AICTE product. Present it as a proposed prototype developed for the hackathon unless official authorization is provided.
+
+# 1. NON-NEGOTIABLE DEVELOPMENT RULES
+
+1. First inspect the existing project files and understand the current environment.
+2. If the repository already contains useful code, preserve and improve it instead of unnecessarily replacing everything.
+3. If the repository is empty, initialize the project with a suitable production-oriented architecture.
+4. Do not stop after producing a plan, wireframe, mockup, or static landing page.
+5. Implement the complete application, including frontend, backend, database schema, validation, authentication, dashboard interactions, analytics, and testing.
+6. All important buttons, forms, filters, charts, navigation items, tables, dialogs, and actions must work.
+7. Never implement a button that merely looks functional but does nothing.
+8. Do not substitute a static dashboard for a functional application.
+9. Do not hardcode changing statistics in the UI. Calculate dashboard metrics from actual database records.
+10. Use realistic demonstration data when authorized production data is unavailable. Clearly identify seeded records as DEMO DATA.
+11. Never invent official AICTE statistics, complaint counts, government integrations, service-level agreements, or official policies.
+12. External AI services must be optional and configured through environment variables. The application must remain usable without an AI API key.
+13. Do not expose API keys, passwords, confidential records, or personal information in frontend code or logs.
+14. Create setup instructions, environment configuration examples, database migrations, seed scripts, and tests.
+15. Run the available checks and fix errors before declaring the application complete.
+16. Do not stop to ask me questions about ordinary technical choices. Choose sensible defaults and continue.
+17. If an external service requires credentials, implement the integration properly and explain exactly how to configure it.
+18. Never claim a feature or integration works unless it has actually been implemented and tested.
+
+# 2. RECOMMENDED TECHNOLOGY STACK
+
+Use the following stack unless the existing repository or execution environment requires a compatible alternative.
+
+Frontend:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Lucide icons
+- Recharts
+- React Router
+- TanStack Query
+- React Hook Form
+- Zod
+
+Backend and data:
+- Supabase
+- PostgreSQL
+- Supabase Auth
+- Row Level Security
+- Supabase Storage for authorized attachments
+- PostgreSQL migrations and seed scripts
+- Supabase Edge Functions or a secure server-side API for privileged operations
+
+AI:
+- Optional LLM integration through a secure server-side adapter
+- Environment-based API configuration
+- Deterministic rule-based fallback when no AI credentials are available
+
+Testing:
+- Vitest
+- React Testing Library
+- Playwright for browser-based end-to-end testing, if the environment supports it
+
+Deployment:
+- Vercel or Netlify for the frontend
+- Supabase for hosted authentication and database services
+
+Do not assume that credentials, deployment accounts, APIs, or external services are already available.
+
+If Supabase credentials are unavailable, create a development mode with a local PostgreSQL option or a clearly documented local demonstration repository. Never silently pretend that a local mock repository is connected to Supabase.
+
+# 3. VISUAL DESIGN SYSTEM
+
+Create a premium government-enterprise SaaS interface.
+
+The visual experience should communicate:
+- Trust
+- Transparency
+- Accountability
+- Security
+- Administrative efficiency
+- Data-driven decision-making
+
+Design direction:
+- Deep navy and midnight blue
+- White and soft slate backgrounds
+- Restrained teal accents
+- Amber for warnings
+- Red for critical cases
+- Green for completed resolutions
+- Elegant gradients used sparingly
+- Professional typography
+- Subtle shadows and borders
+- Consistent spacing
+- Carefully designed cards
+- Refined transitions
+- Responsive layouts
+
+Use Inter or another suitable open-source font.
+
+Create a polished layout with:
+- Collapsible left navigation sidebar
+- Institution/organization selector where appropriate
+- Top navigation bar
+- Global search
+- Notification center
+- Breadcrumbs
+- User profile menu
+- Main dashboard workspace
+- Responsive mobile navigation
+
+Add a clean loading experience, empty states, skeleton loaders, meaningful error states, confirmation dialogs, and success notifications.
+
+Avoid excessive animations, unnecessary glassmorphism, oversized headings, and distracting visual effects.
+
+The first screen must immediately communicate the purpose and value of the platform.
+
+# 4. AUTHENTICATION AND ROLE-BASED ACCESS
+
+Implement real authentication using the configured authentication provider.
+
+Provide the following roles:
+
+1. Super Administrator
+2. Central Monitoring Officer
+3. Bureau/Cell Officer
+4. Institution Liaison Officer
+5. Read-Only Auditor
+
+Each role must have appropriate permissions.
+
+Super Administrator:
+- Manage authorized users and roles.
+- Manage bureau/cell configuration.
+- View permitted organization-wide metrics.
+- Configure workflows and escalation rules.
+- Access security and audit reports.
+
+Central Monitoring Officer:
+- View the consolidated complaint dashboard.
+- Monitor complaints across authorized bureaus/cells.
+- Assign and reassign complaints according to permissions.
+- Review escalations and overdue cases.
+- Generate management reports.
+
+Bureau/Cell Officer:
+- View cases assigned to their bureau/cell.
+- Update permitted case statuses.
+- Add investigation notes.
+- Request additional information.
+- Recommend resolution.
+- Escalate cases when appropriate.
+
+Institution Liaison Officer:
+- View complaints concerning authorized institutions.
+- Submit requested information.
+- Respond to clarification requests.
+- View permitted case progress.
+
+Read-Only Auditor:
+- Review authorized case histories.
+- Inspect audit logs and permitted reports.
+- Export permitted information without changing records.
+
+Enforce permissions in the backend and database, not merely by hiding frontend buttons.
+
+Create a professional login screen and an access-denied page.
+
+Provide a clearly labeled demonstration mode for judges. Demo access must not bypass real authorization controls or expose confidential information.
+
+Never ship a publicly accessible administrator account with a hardcoded password.
+
+# 5. CENTRAL COMMAND DASHBOARD
+
+Create the main dashboard as the application's strongest visual feature.
+
+The dashboard must display metrics calculated from the database:
+
+- Total registered complaints
+- Newly received complaints
+- Complaints awaiting assignment
+- Complaints under investigation
+- Complaints awaiting institution response
+- Resolved complaints
+- Reopened complaints
+- Overdue complaints
+- Critical-priority complaints
+- Average resolution time
+- Resolution rate
+- Complaints by bureau/cell
+- Complaints by institution
+- Complaint inflow trends
+- Complaint resolution trends
+- Escalations requiring attention
+
+Every metric must be clickable and open a filtered view of the corresponding complaints.
+
+Create advanced visualizations:
+- Complaint intake versus resolution line chart
+- Complaint distribution by status
+- Bureau/cell workload comparison
+- Priority distribution
+- Institution-level complaint distribution
+- Monthly complaint trends
+- Resolution-time distribution
+- Escalation trends
+- Ageing analysis
+- Workload and backlog comparison
+
+Add:
+- Date range filters
+- Bureau/cell filters
+- Institution filters
+- Priority filters
+- Status filters
+- Refresh action
+- Last-updated timestamp
+- Export report action
+
+Filters must affect the displayed metrics and charts consistently.
+
+Provide a dashboard summary explaining significant changes using actual computed data.
+
+Never present invented analytics as actual operational data.
+
+# 6. COMPLAINT REGISTRATION AND INTAKE
+
+Create a comprehensive complaint registration workflow.
+
+Complaint fields:
+- Unique complaint reference number
+- Complaint title
+- Detailed description
+- Complaint category
+- Subcategory
+- Institution name
+- Institution identifier, when available
+- State
+- District
+- Relevant bureau/cell
+- Submission date
+- Priority
+- Source channel
+- Complainant type
+- Assigned officer
+- Supporting documents
+- Related complaint references
+- Current status
+
+Support complaint categories such as:
+- Academic and examination-related matters
+- Faculty and staffing concerns
+- Infrastructure and facilities
+- Student grievances
+- Institutional compliance
+- Approval and affiliation-related concerns
+- Financial and administrative issues
+- Other institution-related complaints
+
+Treat these as configurable demonstration categories, not a claim that they are the official AICTE classification scheme.
+
+Features:
+- Dynamic form validation
+- Required-field indicators
+- Draft saving
+- Duplicate-submission prevention
+- Attachment validation
+- Clear success confirmation
+- Automatic reference number generation
+- Searchable institution selection
+- Category-dependent fields
+- Safe error handling
+- Submission audit event
+
+Use a configurable complaint reference format, for example:
+AICTE-DEMO-2026-00001
+
+Label demonstration references clearly when appropriate.
+
+Never expose the complainant's personal information unnecessarily.
+
+# 7. COMPLETE COMPLAINT LIFECYCLE
+
+Implement the following configurable lifecycle:
+
+1. Received
+2. Initial Review
+3. Pending Assignment
+4. Assigned
+5. Under Investigation
+6. Awaiting Institution Response
+7. Additional Information Required
+8. Resolution Proposed
+9. Resolution Under Review
+10. Resolved
+11. Reopened
+12. Closed
+13. Escalated
+
+Do not allow arbitrary status changes.
+
+Implement an explicit state-transition policy with role-based permissions.
+
+Every status transition must record:
+- Previous status
+- New status
+- Actor
+- Timestamp
+- Reason
+- Related comment or action
+- Relevant assignment details
+
+Create a detailed case timeline showing the full authorized history of a complaint.
+
+Allow permitted users to add internal notes and appropriately classified external communications.
+
+Clearly distinguish internal notes from information visible to institutions or complainants.
+
+# 8. COMPLAINT MANAGEMENT WORKSPACE
+
+Build a powerful complaint management page.
+
+Include:
+- Searchable, sortable table
+- Server-side pagination
+- Saved filters
+- Multi-column sorting
+- Status badges
+- Priority indicators
+- Bureau/cell assignment
+- Assigned officer
+- Institution
+- Submission date
+- Last updated date
+- Ageing indicator
+- Escalation indicator
+
+Provide:
+- Table view
+- Kanban-style status board
+- Detailed case view
+- Bulk assignment for authorized users
+- Bulk export with permission checks
+- Complaint reassignment
+- Duplicate complaint linking
+- Investigation notes
+- Request-information action
+- Resolution proposal
+- Reopen action with reason
+- Close action where permitted
+
+Create an advanced case-detail page with tabs for:
+- Overview
+- Timeline
+- Investigation
+- Institution responses
+- Attachments
+- Related complaints
+- Audit history
+
+Every action must validate permissions, input, and allowed state transitions.
+
+# 9. AI-POWERED COMPLAINT INTELLIGENCE
+
+Create a dedicated AI intelligence module.
+
+A. Automatic Classification
+
+Suggest a complaint category and subcategory from its text.
+
+B. Priority Recommendation
+
+Recommend a priority using transparent rules based on configurable factors such as:
+- Potential impact
+- Urgency
+- Number of affected people
+- Compliance risk
+- Complaint ageing
+
+Do not automatically make consequential administrative decisions solely on an AI prediction.
+
+C. Duplicate Complaint Detection
+
+Detect potentially related cases using text similarity, institution identifiers, category, and time proximity.
+
+Display similarity indicators and the reasons for a match.
+
+Require an authorized human to confirm duplicate linking or merging.
+
+D. Complaint Summarization
+
+Generate a concise summary containing:
+- Core issue
+- Institution involved
+- Main allegations as reported
+- Evidence supplied
+- Missing information
+- Suggested next administrative step
+
+Clearly distinguish allegations from verified facts.
+
+E. Suggested Next Actions
+
+Provide explainable recommendations such as requesting missing information, reviewing relevant documents, or escalating an overdue case under configured rules.
+
+F. Sentiment and Urgency Signals
+
+Identify language that may indicate urgency or frustration.
+
+Treat these as weak signals, not proof of misconduct or a definitive assessment of the complainant.
+
+G. Trend Analysis
+
+Identify recurring complaint categories, rising backlogs, repeated institution-related issues, and changes in resolution patterns.
+
+Use real stored records for analytics.
+
+H. Explainable AI
+
+For every AI recommendation, show:
+- Recommendation
+- Reason
+- Confidence where technically justified
+- Evidence used
+- Important limitations
+- Human review requirement
+
+I. AI Feedback
+
+Allow authorized users to mark AI suggestions as:
+- Accepted
+- Modified
+- Rejected
+
+Store feedback for evaluation and improvement.
+
+J. AI Service Fallback
+
+If an external LLM API is not configured, provide deterministic local rules and clearly label the output as rule-based assistance.
+
+Never claim that an external LLM is running when it is not.
+
+Treat uploaded documents and complaint text as untrusted input. Prevent them from overriding system instructions or triggering unauthorized actions.
+
+# 10. SMART ESCALATION ENGINE
+
+Create a configurable escalation management system.
+
+Implement:
+- Configurable response targets
+- Configurable resolution targets
+- Ageing calculations
+- Warning thresholds
+- Overdue detection
+- Escalation levels
+- Escalation reason
+- Assigned escalation owner
+- Escalation history
+- Priority-based monitoring
+- Escalation acknowledgement
+
+Example demonstration rules:
+- Warning when a configured target is approaching.
+- Mark a case overdue when its configured target has passed.
+- Escalate an unresolved case to an authorized supervisory role when the configured rule is satisfied.
+
+The example targets must be editable configuration values, not representations of official AICTE policy.
+
+Account for working days, holidays, time zones, pauses, and approved extensions only when those rules are explicitly configured.
+
+If scheduled jobs are unavailable, implement a reliable manual refresh mechanism and document the limitation.
+
+Do not claim that background notifications or automatic escalation are running unless their execution is configured and verified.
+
+# 11. BUREAU/CELL COORDINATION
+
+Create an integrated multi-bureau/cell workspace.
+
+Features:
+- Configurable bureau/cell directory
+- Bureau workload dashboard
+- Complaint routing
+- Assignment history
+- Cross-bureau collaboration
+- Authorized case transfer
+- Transfer reason
+- Transfer acknowledgement
+- Pending interdepartmental actions
+- Shared case timeline
+- Workload imbalance alerts
+- Overdue case comparison
+
+Seed illustrative bureau/cell names as demonstration configuration only.
+
+Do not invent a definitive official AICTE organizational structure.
+
+Design the system so administrators can configure the actual organizational structure after it is verified.
+
+# 12. INSTITUTION DIRECTORY
+
+Build a searchable institution directory.
+
+Fields:
+- Institution identifier
+- Institution name
+- Institution type
+- State
+- District
+- Address, if verified
+- Available official identifiers
+- Authorized contact details, if legitimately supplied
+- Institution status, when verified
+- Associated complaints
+- Pending responses
+- Resolution statistics
+
+Support CSV import with:
+- Column mapping
+- Validation
+- Duplicate detection
+- Preview
+- Error report
+- Authorized confirmation before committing
+
+Do not invent institution records or present fabricated contact information as real.
+
+If a verified official institution dataset is unavailable, use clearly labeled demonstration institutions.
+
+Provide an extensible importer for verified official data.
+
+# 13. ADVANCED SEARCH AND GLOBAL NAVIGATION
+
+Implement global search across authorized records.
+
+Search by:
+- Complaint reference
+- Complaint title
+- Institution
+- Category
+- Bureau/cell
+- Assigned officer
+- Status
+
+Support:
+- Filter combinations
+- Saved searches
+- Recent searches
+- Keyboard-friendly navigation
+- Search result highlighting
+- Permission-aware results
+
+Never allow search to reveal records outside the user's authorized scope.
+
+# 14. REPORTS AND MANAGEMENT INTELLIGENCE
+
+Create a reports center with:
+- Daily complaint summary
+- Weekly performance report
+- Monthly management report
+- Bureau/cell workload report
+- Institution complaint report
+- Overdue and ageing report
+- Resolution performance report
+- Escalation report
+- Complaint category analysis
+- Data quality report
+- AI recommendation evaluation report
+
+Allow filtering by date, bureau/cell, institution, status, and category.
+
+Provide downloadable CSV reports and professionally formatted PDF reports where supported.
+
+Report figures must come from the same filtered dataset as the displayed report.
+
+Include:
+- Report title
+- Generation date
+- Active filters
+- Dataset scope
+- Data completeness note
+- Summary metrics
+- Charts where practical
+- Confidentiality classification where applicable
+
+Do not export sensitive information to users who lack permission.
+
+# 15. AUDIT AND ACCOUNTABILITY
+
+Implement a security-conscious audit log.
+
+Track relevant events such as:
+- Authentication events where supported
+- Complaint creation
+- Assignment changes
+- Status changes
+- Case transfers
+- Escalation actions
+- Resolution decisions
+- Reopening
+- Data imports
+- Exports
+- Role changes
+- Administrative configuration changes
+
+Audit records should include:
+- Actor
+- Event type
+- Entity reference
+- Timestamp
+- Relevant change summary
+- Reason where required
+
+Prevent ordinary users from editing or deleting audit history.
+
+Use server-side enforcement for sensitive actions.
+
+Avoid recording passwords, authentication tokens, unnecessary personal data, or full confidential complaint text in audit logs.
+
+Create an audit explorer with role-appropriate filtering and export permissions.
+
+# 16. NOTIFICATION CENTER
+
+Create an in-app notification center.
+
+Support notification events for:
+- New assignments
+- Reassignments
+- Requests for information
+- Institution responses
+- Approaching deadlines
+- Overdue complaints
+- Escalations
+- Resolution proposals
+- Case reopening
+
+Features:
+- Unread count
+- Read/unread state
+- Notification history
+- Related complaint navigation
+- User preferences
+- Appropriate deduplication
+
+Implement email integration only if provider credentials are configured.
+
+If real-time updates are supported by the configured backend, use them for relevant dashboards and notifications.
+
+Otherwise, use a documented refresh or polling strategy.
+
+Clearly communicate which notification channels are actually configured.
+
+# 17. SETTINGS AND ADMINISTRATION
+
+Build a functional settings area.
+
+Include:
+- Organization configuration
+- Bureau/cell management
+- Role and permission management
+- Institution import
+- Complaint category management
+- Priority configuration
+- Lifecycle configuration
+- Escalation targets
+- Notification preferences
+- AI settings
+- Data retention configuration
+- Audit access
+- System health information
+
+Protect privileged configuration changes with appropriate authorization and validation.
+
+Require confirmation for destructive actions.
+
+Do not allow ordinary administrators to silently change immutable audit history.
+
+# 18. DATABASE DESIGN
+
+Create normalized PostgreSQL tables for appropriate entities, including:
+
+- profiles
+- organizations
+- roles
+- permissions
+- user_role_assignments
+- bureaus
+- institution_directory
+- complaints
+- complaint_assignments
+- complaint_status_history
+- complaint_comments
+- complaint_attachments
+- complaint_institution_responses
+- complaint_relationships
+- complaint_escalations
+- complaint_ai_assessments
+- ai_feedback
+- notifications
+- notification_preferences
+- audit_logs
+- workflow_configurations
+- category_configurations
+- priority_configurations
+- escalation_configurations
+- saved_searches
+- import_jobs
+- import_errors
+
+Adapt the exact schema to avoid unnecessary complexity.
+
+Use:
+- Primary keys
+- Foreign keys
+- Appropriate indexes
+- Unique constraints
+- Timestamps
+- Referential integrity
+- Soft deletion where appropriate
+- Server-side validation
+- Transactional updates for multi-step operations
+
+Create database migrations and a repeatable seed script.
+
+Use appropriate constraints for status values and reference numbers.
+
+Store timestamps consistently and render them in the configured user time zone.
+
+Do not use frontend-only storage as the source of truth for production complaint records.
+
+# 19. DATABASE SECURITY AND ROW LEVEL SECURITY
+
+Create and test Row Level Security policies for sensitive tables.
+
+Enforce:
+- Authorized record visibility
+- Role-specific write access
+- Bureau/cell access boundaries
+- Institution-level access boundaries
+- Attachment authorization
+- Restricted administrative operations
+- Audit log protections
+
+Do not trust user-supplied role names, IDs, or organization identifiers.
+
+Do not expose Supabase service-role keys to the browser.
+
+Keep privileged actions on trusted server-side execution paths.
+
+Ensure that unauthorized users cannot access complaints by guessing identifiers.
+
+Write tests for both permitted and forbidden access.
+
+# 20. REAL DATA STRATEGY
+
+The goal is to use real, verifiable data wherever it is available.
+
+Use the following hierarchy:
+
+1. Official datasets published by the relevant government authority.
+2. Official institution directories and identifiers.
+3. Data explicitly supplied by authorized stakeholders.
+4. Clearly labeled demonstration records for unavailable data.
+
+Before importing an external dataset:
+- Verify the source.
+- Check the publication date.
+- Inspect the licence and permitted usage.
+- Validate the schema.
+- Check completeness and duplicates.
+- Record source provenance.
+- Preserve source dates.
+- Distinguish verified facts from imported unverified values.
+
+Do not scrape protected systems, bypass access controls, or collect personal information without authorization.
+
+Do not invent real complaint records.
+
+Never populate the database with fabricated allegations about real institutions or people.
+
+For the hackathon demonstration, generate a useful synthetic dataset with fictional institutions and fictional complaint scenarios.
+
+Display a visible label such as:
+"DEMONSTRATION ENVIRONMENT — SAMPLE DATA — NOT OFFICIAL AICTE RECORDS."
+
+Create realistic variations in dates, statuses, priorities, categories, and bureau assignments so the analytics and workflows can be demonstrated properly.
+
+Make all dashboard figures calculate from the seeded database records.
+
+Provide a documented way to remove demonstration data before an authorized production deployment.
+
+# 21. ACCESSIBILITY AND RESPONSIVE DESIGN
+
+Meet practical WCAG 2.2 AA accessibility goals where feasible.
+
+Implement:
+- Keyboard navigation
+- Visible focus indicators
+- Accessible form labels
+- Semantic HTML
+- Suitable color contrast
+- Screen-reader-friendly status labels
+- Accessible dialogs
+- Chart summaries
+- Responsive tables
+- Mobile-friendly forms
+- Reduced-motion support
+- Clear error messages
+
+Do not communicate status using color alone.
+
+Test layouts on desktop, tablet, and mobile screen sizes.
+
+# 22. APPLICATION PAGES
+
+Implement these pages with consistent design and working navigation:
+
+1. Login
+2. Demo access and onboarding
+3. Main dashboard
+4. Complaint management
+5. Complaint registration
+6. Complaint detail and timeline
+7. Assignment workspace
+8. Kanban complaint board
+9. AI complaint intelligence
+10. Duplicate detection review
+11. Escalation center
+12. Bureau/cell dashboard
+13. Institution directory
+14. Institution details
+15. Reports and analytics
+16. Notification center
+17. Audit explorer
+18. User management
+19. Roles and permissions
+20. Workflow configuration
+21. Category and priority settings
+22. Data import center
+23. AI configuration
+24. System health
+25. User profile
+26. Access denied
+27. Not found
+28. Error and recovery screens
+
+Prioritize a fully functional core workflow over superficial implementation of every page.
+
+# 23. SIGNATURE FEATURES FOR SIH DEMONSTRATION
+
+Implement the following standout features where technically feasible.
+
+A. COMMAND CENTER
+
+A consolidated operational view showing complaint volume, backlog, ageing, escalations, and bureau workload.
+
+B. COMPLAINT INTELLIGENCE ASSISTANT
+
+A contextual assistant that answers questions about authorized stored records.
+
+Example questions:
+- Which bureau has the largest pending backlog?
+- Which cases have exceeded their configured targets?
+- What are the most common complaint categories this month?
+- Which cases need an officer's attention first?
+- How has resolution performance changed over the selected period?
+
+Answers must be generated from authorized, queryable application data.
+
+Never fabricate results when the database lacks the required information.
+
+C. CASE AGEING HEATMAP
+
+Visualize the age and status of complaints across bureaus/cells and configurable priority groups.
+
+D. DUPLICATE COMPLAINT NETWORK
+
+Show confirmed and suspected relationships between complaint records.
+
+Distinguish algorithmically suspected relationships from human-confirmed links.
+
+E. INSTITUTION RESPONSE TRACKER
+
+Monitor requests sent to institutions, responses received, and outstanding actions.
+
+F. SMART CASE TIMELINE
+
+Show the complete chronological sequence of assignments, responses, investigations, escalations, and resolutions.
+
+G. MANAGEMENT BRIEF GENERATOR
+
+Generate a concise management brief from actual filtered data, with clear date ranges, counts, limitations, and suggested areas for review.
+
+H. DATA QUALITY MONITOR
+
+Detect missing fields, invalid identifiers, duplicate imports, and incomplete institution records.
+
+I. BOTTLENECK DETECTOR
+
+Highlight stages where complaints accumulate, using actual status-history and timestamp data.
+
+J. DEMONSTRATION SCENARIO CONTROLS
+
+Provide a clearly labeled demo-only scenario tool for authorized demo users.
+
+It may create fictional sample cases, simulate status transitions, and demonstrate escalation behavior.
+
+Never present simulated events as real-world operational activity.
+
+# 24. CORE USER JOURNEY
+
+The application must support this complete demonstration:
+
+1. An authorized user logs in.
+2. The dashboard displays database-derived metrics.
+3. The user registers a fictional demonstration complaint.
+4. The system validates the form and generates a reference number.
+5. The complaint appears in the management table.
+6. An authorized officer assigns it to a bureau/cell.
+7. The officer opens the case detail page.
+8. The AI module suggests a category, priority, and summary.
+9. The officer reviews and accepts or modifies the suggestions.
+10. The officer requests additional institution information.
+11. The system records the request and notification.
+12. An authorized institution liaison submits a response.
+13. The case timeline updates.
+14. The officer records an investigation update.
+15. The configured escalation mechanism identifies overdue cases.
+16. An authorized officer proposes a resolution.
+17. An authorized reviewer approves the resolution.
+18. The case is resolved and its metrics update.
+19. The dashboard and reports reflect the new state.
+20. An auditor can inspect the relevant history.
+21. Unauthorized users are blocked from restricted operations.
+
+Every step must use actual application state and persisted records in the configured environment.
+
+If a step requires a separately configured external service, provide a clear fallback and document the limitation.
+
+# 25. PERFORMANCE AND RELIABILITY
+
+Implement:
+- Server-side pagination
+- Database indexes
+- Efficient aggregate queries
+- Debounced search
+- Controlled data fetching
+- Sensible caching
+- Error boundaries
+- Retry behavior where appropriate
+- Input validation
+- Transactional state changes
+- Graceful degradation
+- Clear offline or connection-error states
+
+Avoid loading the entire complaint database into the browser.
+
+Avoid unnecessary repeated queries.
+
+Ensure dashboard filters and report filters remain consistent.
+
+# 26. SECURITY REQUIREMENTS
+
+Apply secure development practices:
+- Validate all inputs.
+- Enforce authorization server-side.
+- Use secure authentication flows.
+- Restrict upload size and file types.
+- Protect private attachments.
+- Avoid unsafe HTML rendering.
+- Protect sensitive endpoints against abuse.
+- Add appropriate rate limits where supported.
+- Avoid leaking sensitive details in error messages.
+- Keep secrets in environment variables.
+- Apply least-privilege access.
+- Log security-relevant events appropriately.
+- Avoid exposing confidential data in AI prompts unnecessarily.
+
+Treat uploaded files, complaint descriptions, and imported CSV content as untrusted.
+
+Document the remaining security limitations and the additional checks required before handling real government or institutional data.
+
+Do not claim security certification or official government approval.
+
+# 27. REQUIRED PROJECT DELIVERABLES
+
+Create a complete project containing:
+
+- Frontend application
+- Backend logic
+- Database schema
+- Database migrations
+- RLS policies
+- Seed data
+- Authentication
+- Role-based authorization
+- Working complaint lifecycle
+- Dashboard and charts
+- Search and filtering
+- AI assistance and fallback
+- Escalation rules
+- Reports and exports
+- Audit trail
+- Import workflow
+- Validation
+- Automated tests
+- Environment variable example file
+- README
+- Setup instructions
+- Local development instructions
+- Database setup instructions
+- Demo walkthrough
+- Deployment instructions
+- Known limitations
+- Production readiness checklist
+
+Include a useful folder structure with reusable components and maintainable code.
+
+Do not place the entire application in one enormous component.
+
+Do not leave core features as TODO comments.
+
+# 28. TESTING AND ACCEPTANCE CRITERIA
+
+Before finishing, run the checks supported by the environment.
+
+Verify:
+
+1. The application starts successfully.
+2. The frontend builds without errors.
+3. The main navigation works.
+4. Authentication behaves correctly.
+5. Unauthorized access is blocked.
+6. Complaint registration validates data.
+7. Complaint reference numbers are unique.
+8. Complaint creation persists to the configured database.
+9. Status transitions follow workflow rules.
+10. Assignment changes are recorded.
+11. The timeline displays correct history.
+12. Dashboard metrics derive from stored records.
+13. Search and filters work together.
+14. Charts update when filters change.
+15. Escalation calculations follow configured targets.
+16. AI fallback works without an API key.
+17. AI-generated recommendations are labeled appropriately.
+18. CSV exports contain the selected records.
+19. Restricted data cannot be accessed by unauthorized roles.
+20. Audit records are protected from ordinary modification.
+21. Empty and error states render correctly.
+22. The interface is usable on mobile.
+23. The seed script can be run reproducibly.
+24. The README contains accurate setup instructions.
+
+Create automated tests for critical backend operations and permission boundaries.
+
+If browser automation is available, test the core user journey end to end.
+
+Fix errors discovered during testing.
+
+If an external integration cannot be tested because credentials are unavailable, explicitly report it rather than claiming it passed.
+
+# 29. IMPLEMENTATION EXECUTION PLAN
+
+Work directly in the project environment.
+
+PHASE 1:
+Inspect the repository, identify the execution environment, and establish the application architecture.
+
+PHASE 2:
+Create the design system, application layout, navigation, and core pages.
+
+PHASE 3:
+Implement the database schema, migrations, authentication, permissions, and seed data.
+
+PHASE 4:
+Implement complaint registration, assignment, status transitions, timeline, and case details.
+
+PHASE 5:
+Implement dashboard metrics, filters, analytics, reporting, and exports.
+
+PHASE 6:
+Implement AI assistance, duplicate detection, escalation monitoring, notifications, and bureau coordination.
+
+PHASE 7:
+Implement administration, audit explorer, institution imports, and configuration screens.
+
+PHASE 8:
+Run tests, fix bugs, inspect responsive layouts, and improve the visual experience.
+
+PHASE 9:
+Prepare documentation, demo credentials if safely supported, demonstration scenarios, and deployment instructions.
+
+Do not stop after completing the architecture or initial UI. Continue through implementation, testing, and documentation.
+
+If you encounter a blocker, choose the safest practical alternative, implement what can be completed, and clearly document what still requires external configuration.
+
+# 30. FINAL JUDGE EXPERIENCE
+
+The final application must communicate five things immediately:
+
+1. A clear understanding of the institutional complaint-monitoring problem.
+2. A consolidated operational dashboard instead of fragmented spreadsheets.
+3. Transparent, human-supervised AI assistance.
+4. End-to-end accountability through assignment, escalation, resolution, and audit history.
+5. A realistic path from hackathon prototype to a secure, authorized deployment.
+
+Include a polished demo mode with fictional sample data, meaningful dashboard visualizations, and a scripted scenario that demonstrates the entire complaint lifecycle.
+
+Prepare a concise in-app "How to Explore the Demo" guide.
+
+Use this product positioning:
+
+"AICTE Complaint Intelligence Hub is a proposed integrated platform that helps authorized stakeholders monitor institutional complaints across configured bureaus and cells, identify backlogs, coordinate investigations, manage escalation, and improve accountability through explainable AI-assisted insights."
+
+Do not claim that the platform has already been adopted by AICTE, connected to official systems, or validated using confidential government records.
+
+# FINAL INSTRUCTION
+
+Start by inspecting the project files and available execution environment.
+
+Then implement the application directly in the workspace.
+
+Do not return only a description of the solution, a plan, screenshots, or code snippets.
+
+Build the strongest complete working implementation that the available environment supports.
+
+Prioritize a reliable end-to-end complaint workflow, real database persistence, secure permissions, useful analytics, and polished UI over fake features.
+
+When finished, provide:
+1. A concise list of implemented features.
+2. The project structure.
+3. Exact commands to run the application.
+4. Database setup and migration instructions.
+5. Environment variables that must be configured.
+6. Demo access instructions.
+7. Tests executed and their actual results.
+8. Integrations requiring credentials.
+9. Known limitations.
+10. Steps to deploy and prepare the project for a judge demonstration.
+
+Begin now. Inspect the existing workspace and build the application.
